@@ -10,5 +10,7 @@
   "test": "jest",
   "mode": "universal",
   "devTools": "jsconfig.json",
-  "api": "https://pwa-demo.ddev.site/api"
+  "api": "https://pwa-demo.ddev.site/api",
+  "locales":["en","de","da"],
+  "locale":["en"]
 }
