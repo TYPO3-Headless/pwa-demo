@@ -3,6 +3,8 @@ TYPO3 PWA distribution. It allows to start exploring PWA solution for TYPO3.
 It's based on 
 
 - https://github.com/TYPO3-Initiatives/headless
+- https://github.com/TYPO3-Initiatives/nuxt-typo3
+- https://github.com/TYPO3-Initiatives/create-nuxt-typo3
 
 
 ## Development
