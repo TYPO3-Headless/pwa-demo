@@ -1,0 +1,16 @@
+{
+  "name": "pwa-demo",
+  "author": "TYPO3 PWA Initiative",
+  "description": "TYPO3 PWA Demo Site",
+  "pm": "yarn",
+  "ui": "none",
+  "server": "express",
+  "features": ["pwa","typo"],
+  "linter": ["eslint","prettier"],
+  "test": "jest",
+  "mode": "universal",
+  "devTools": "jsconfig.json",
+  "api": "https://pwa-demo.ddev.site/api",
+  "locales":["en","de","da"],
+  "locale":["en"]
+}

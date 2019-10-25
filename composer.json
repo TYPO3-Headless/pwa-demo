@@ -1,0 +1,58 @@
+{
+    "name": "friendsoftypo/pwa-demo",
+    "type": "project",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Łukasz Uznański",
+            "email": "l.uznanski@macopedia.pl"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "bk2k/bootstrap-package": "^10.0.0",
+        "typo3/cms-about": "^9.5.0",
+        "typo3/cms-adminpanel": "^9.5.0",
+        "typo3/cms-backend": "^9.5.0",
+        "typo3/cms-belog": "^9.5.0",
+        "typo3/cms-beuser": "^9.5.0",
+        "typo3/cms-core": "^9.5.0",
+        "typo3/cms-extbase": "^9.5.0",
+        "typo3/cms-extensionmanager": "^9.5.0",
+        "typo3/cms-feedit": "^9.5.0",
+        "typo3/cms-felogin": "^9.5.0",
+        "typo3/cms-filelist": "^9.5.0",
+        "typo3/cms-filemetadata": "^9.5.0",
+        "typo3/cms-fluid": "^9.5.0",
+        "typo3/cms-form": "^9.5.0",
+        "typo3/cms-frontend": "^9.5.0",
+        "typo3/cms-info": "^9.5.0",
+        "typo3/cms-install": "^9.5.0",
+        "typo3/cms-linkvalidator": "^9.5.0",
+        "typo3/cms-lowlevel": "^9.5.0",
+        "typo3/cms-opendocs": "^9.5.0",
+        "typo3/cms-recordlist": "^9.5.0",
+        "typo3/cms-redirects": "^9.5.0",
+        "typo3/cms-reports": "^9.5.0",
+        "typo3/cms-rsaauth": "^9.5.0",
+        "typo3/cms-rte-ckeditor": "^9.5.0",
+        "typo3/cms-scheduler": "^9.5.0",
+        "typo3/cms-seo": "^9.5.0",
+        "typo3/cms-setup": "^9.5.0",
+        "typo3/cms-sys-action": "^9.5.0",
+        "typo3/cms-sys-note": "^9.5.0",
+        "typo3/cms-t3editor": "^9.5.0",
+        "typo3/cms-tstemplate": "^9.5.0",
+        "typo3/cms-viewpage": "^9.5.0",
+        "friendsoftypo3/headless": "dev-master",
+        "vlucas/phpdotenv": "^2.4"
+    },
+    "require-dev": {
+        "codeception/codeception": "^2.5.1"
+    },
+    "config": {
+        "sort-packages": true,
+        "bin-dir": "bin",
+        "vendor-dir": "vendor"
+    }
+}
