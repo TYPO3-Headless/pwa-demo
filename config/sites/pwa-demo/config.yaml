@@ -1,5 +1,5 @@
 rootPageId: 1
-base: 'https://api.pwa-demo.ddev.site'
+base: 'api.pwa-demo.ddev.site'
 languages:
   -
     languageId: '0'
