@@ -90,7 +90,7 @@ return [
         'sitename' => 'PWA Demo',
         'systemLogLevel' => 2,
         'systemMaintainers' => [
-            1,
+            2,
         ],
     ],
 ];

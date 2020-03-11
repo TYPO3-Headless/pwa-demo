@@ -1,11 +1,12 @@
-rootPageId: 1
-base: 'api.pwa-demo.ddev.site'
+base: api.pwa-demo.ddev.site
+baseVariants: {  }
+errorHandling: {  }
 languages:
   -
     languageId: '0'
     title: English
     navigationTitle: English
-    base: '/'
+    base: /
     locale: en_US.UTF8
     iso-639-1: en
     hreflang: en-US
@@ -14,10 +15,24 @@ languages:
     flag: us
     enabled: true
   -
+    languageId: '1'
+    title: Polish
+    navigationTitle: Polish
+    base: /pl/
+    locale: pl_PL.UTF-8
+    iso-639-1: pl
+    hreflang: pl-PL
+    direction: ltr
+    typo3Language: default
+    flag: pl
+    fallbackType: fallback
+    fallbacks: '0'
+    enabled: true
+  -
     languageId: '2'
     title: German
     navigationTitle: Deutsch
-    base: '/de/'
+    base: /de/
     locale: de_DE.UTF8
     iso-639-1: de
     hreflang: de-DE
@@ -27,28 +42,5 @@ languages:
     fallbackType: fallback
     fallbacks: '0'
     enabled: true
-  -
-    languageId: '1'
-    title: Dansk
-    navigationTitle: Dansk
-    base: '/da/'
-    locale: da_DK.UTF-8
-    iso-639-1: da
-    hreflang: da-DK
-    direction: ltr
-    typo3Language: default
-    flag: dk
-    fallbackType: fallback
-    fallbacks: '0'
-    enabled: true
-errorHandling:
-  -
-    errorCode: '404'
-    errorHandler: Page
-    errorContentSource: 't3://page?uid=5'
-baseVariants: {  }
-routes:
-  -
-    route: robots.txt
-    type: staticText
-    content: "User-agent: *\r\nDisallow: /typo3/\r\nDisallow: /typo3_src/"
+rootPageId: 1
+routes: {  }
