@@ -18,7 +18,8 @@ hooks:
   - exec: /var/www/html/.ddev/import-if-empty.sh
   - exec: composer install --ignore-platform-reqs
   - exec: cd front && npm init nuxt-typo3 --answers "$(< ./recommended.json)"
-  - exec: cd front && yarn build && yarn run cross-env NODE_ENV=production NODE_TLS_REJECT_UNAUTHORIZED=0 node server/index.js&
+  - exec: cd front && yarn build
+  - exec: cd front && yarn start&
 use_dns_when_possible: true
 timezone: ""
 
