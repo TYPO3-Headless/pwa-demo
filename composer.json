@@ -1,6 +1,11 @@
 {
+    "repositories": [
+      {
+        "type": "composer",
+        "url": "https://composer.typo3.org/"
+      }
+    ],
     "name": "friendsoftypo/pwa-demo",
-    "type": "project",
     "license": "GPL-2.0-or-later",
     "authors": [
         {
@@ -10,7 +15,8 @@
     ],
     "require": {
         "php": "^7.2",
-        "bk2k/bootstrap-package": "^10.0.0",
+        "helhum/typo3-console": "^5.5.5",
+        "typo3/minimal": "^9.5",
         "typo3/cms-about": "^9.5.0",
         "typo3/cms-adminpanel": "^9.5.0",
         "typo3/cms-backend": "^9.5.0",
@@ -44,15 +50,24 @@
         "typo3/cms-t3editor": "^9.5.0",
         "typo3/cms-tstemplate": "^9.5.0",
         "typo3/cms-viewpage": "^9.5.0",
-        "friendsoftypo3/headless": "dev-master",
-        "vlucas/phpdotenv": "^2.4"
+        "friendsoftypo3/headless": "@dev"
     },
-    "require-dev": {
-        "codeception/codeception": "^2.5.1"
+    "scripts": {
+      "typo3-cms-scripts": [
+        "typo3 extension:activate site_package"
+      ],
+      "post-autoload-dump": [
+        "@typo3-cms-scripts"
+      ]
     },
     "config": {
-        "sort-packages": true,
-        "bin-dir": "bin",
-        "vendor-dir": "vendor"
+      "sort-packages": true,
+      "bin-dir": "bin",
+      "vendor-dir": "vendor"
+    },
+    "extra": {
+      "typo3/minimal": {
+        "web-dir": "public"
+      }
     }
 }
