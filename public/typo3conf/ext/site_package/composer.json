@@ -1,0 +1,21 @@
+{
+  "name": "pwa-demo/site_package",
+  "type": "typo3-cms-extension",
+  "version": "1.0.0",
+  "minimum-stability": "stable",
+  "description": "Site package",
+  "require": {
+    "typo3/cms-core": "^9.5"
+  },
+  "authors": [
+    {
+      "name": "Łukasz Uznański",
+      "role": "Developer"
+    },
+    {
+      "name": "TYPO3 PWA Initiative",
+      "role": "Developer",
+      "email": "extensions@macopedia.pl"
+    }
+  ]
+}

@@ -92,6 +92,9 @@ return [
         'redirects' => [
             'packagePath' => 'typo3/sysext/redirects/',
         ],
+        'rsaauth' => [
+            'packagePath' => 'typo3/sysext/rsaauth/',
+        ],
         'seo' => [
             'packagePath' => 'typo3/sysext/seo/',
         ],
@@ -107,11 +110,11 @@ return [
         'viewpage' => [
             'packagePath' => 'typo3/sysext/viewpage/',
         ],
-        'bootstrap_package' => [
-            'packagePath' => 'typo3conf/ext/bootstrap_package/',
-        ],
         'headless' => [
             'packagePath' => 'typo3conf/ext/headless/',
+        ],
+        'site_package' => [
+            'packagePath' => 'typo3conf/ext/site_package/',
         ],
     ],
     'version' => 5,
