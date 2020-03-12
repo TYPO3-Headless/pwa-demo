@@ -1,1 +1,2 @@
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:site_package/Configuration/TSConfig/Mod/ContentElements/" extension="tsconfig">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:site_package/Configuration/TSConfig/Mod/BackendLayout/" extension="tsconfig">

@@ -1,0 +1,25 @@
+mod.web_layout.BackendLayouts {
+  twoColumns {
+    title = Two columns
+    config {
+      backend_layout {
+        colCount = 2
+        rowCount = 1
+        rows {
+          1 {
+            columns {
+              1 {
+                name = Left
+                colPos = 0
+              }
+              2 {
+                name = Right
+                colPos = 1
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
