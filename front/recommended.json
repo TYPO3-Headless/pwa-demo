@@ -5,6 +5,7 @@
   "pm": "yarn",
   "ui": "none",
   "server": "none",
+  "language": "js",
   "features": ["pwa","typo","skin"],
   "linter": ["eslint","prettier"],
   "test": "jest",
