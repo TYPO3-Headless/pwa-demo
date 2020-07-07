@@ -2,7 +2,7 @@
 It allows to start exploring PWA solution for TYPO3 in minutes.
 It provides docker/ddev local enviroment with both TYPO3 and JS demo application.
 
-It's based on 
+It's based on
 
 - https://github.com/TYPO3-Initiatives/headless
 - https://github.com/TYPO3-Initiatives/headless_news
@@ -34,3 +34,41 @@ Credentials to TYPO3 backend are: ```admin:password```
 
 ## Development
 Development for this extension is happening as part of the TYPO3 PWA initiative, see https://typo3.org/community/teams/typo3-development/initiatives/pwa/
+
+
+## nuxt-typo3 development together with TYPO3 PWA Demo API
+
+This ddev repository provides working application in production mode.
+To play with sources of [nuxt-typo3](https://github.com/TYPO3-Initiatives/nuxt-typo3) plugin based on API created by this ddev package just:
+
+1. Clone [nuxt-typo3](https://github.com/TYPO3-Initiatives/nuxt-typo3) inside of this repository.
+   ```bash
+   git clone https://github.com/TYPO3-Initiatives/nuxt-typo3.git
+   ```
+2. Go to nuxt-typo3 directory and install all needed packages
+    ```bash
+    cd nuxt-typo3 && yarn install
+    ```
+3. Inside of nuxt-typo3 directory call `yarn link` - this command create a symlink for sources of nuxt-typo3 (https://classic.yarnpkg.com/en/docs/cli/link/)
+    ```bash
+    yarn link
+    ```
+4. Go to `front` directory and call
+    ```bash
+    yarn link "nuxt-typo3"
+    ```
+5. Change `nuxt.config.js` in `front` directory
+   ```js
+    typo3: {
+        ...
+        api: {
+            baseURL: 'http://api.pwa-demo.ddev.site'
+        },
+        ...
+    }
+    ```
+6. Call `yarn dev` inside of `front` directory
+    ```bash
+    yarn dev
+    ```
+7. Make some changes in `nuxt-typo3` directory - your front app should be triggered and rebuilded with new changes in `nuxt-typo3` sources.
