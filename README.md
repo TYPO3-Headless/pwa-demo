@@ -57,18 +57,8 @@ To play with sources of [nuxt-typo3](https://github.com/TYPO3-Initiatives/nuxt-t
     ```bash
     yarn link "nuxt-typo3"
     ```
-5. Change `nuxt.config.js` in `front` directory
-   ```js
-    typo3: {
-        ...
-        api: {
-            baseURL: 'http://api.pwa-demo.ddev.site'
-        },
-        ...
-    }
-    ```
-6. Call `yarn dev` inside of `front` directory
+5. Call `yarn dev` inside of `front` directory
     ```bash
     yarn dev
     ```
-7. Make some changes in `nuxt-typo3` directory - your front app should be triggered and rebuilded with new changes in `nuxt-typo3` sources.
+6. Make some changes in `nuxt-typo3` directory - your front app should be triggered and rebuilded with new changes in `nuxt-typo3` sources.
