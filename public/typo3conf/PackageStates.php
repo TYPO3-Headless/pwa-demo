@@ -113,6 +113,12 @@ return [
         'headless' => [
             'packagePath' => 'typo3conf/ext/headless/',
         ],
+        'headless_news' => [
+            'packagePath' => 'typo3conf/ext/headless_news/',
+        ],
+        'news' => [
+            'packagePath' => 'typo3conf/ext/news/',
+        ],
         'site_package' => [
             'packagePath' => 'typo3conf/ext/site_package/',
         ],

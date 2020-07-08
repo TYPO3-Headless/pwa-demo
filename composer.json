@@ -15,8 +15,10 @@
     ],
     "require": {
         "php": "^7.2",
+        "friendsoftypo3/headless": "@dev",
+        "friendsoftypo3/headless_news": "@dev",
+        "georgringer/news": "^8.3",
         "helhum/typo3-console": "^5.5.5",
-        "typo3/minimal": "^9.5",
         "typo3/cms-about": "^9.5.0",
         "typo3/cms-adminpanel": "^9.5.0",
         "typo3/cms-backend": "^9.5.0",
@@ -50,7 +52,7 @@
         "typo3/cms-t3editor": "^9.5.0",
         "typo3/cms-tstemplate": "^9.5.0",
         "typo3/cms-viewpage": "^9.5.0",
-        "friendsoftypo3/headless": "@dev"
+        "typo3/minimal": "^9.5"
     },
     "scripts": {
       "typo3-cms-scripts": [

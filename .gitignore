@@ -10,6 +10,8 @@
 /public/typo3conf/realurl_autoconf.php
 /public/typo3conf/l10n
 /public/typo3conf/ext/headless
+/public/typo3conf/ext/headless_news
+/public/typo3conf/ext/news
 /public/typo3temp
 /public/uploads
 /var
