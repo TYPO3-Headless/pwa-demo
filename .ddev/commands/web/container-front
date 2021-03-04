@@ -1,0 +1,21 @@
+#!/bin/bash
+
+## Description: PWA Front ddev commands for fronted administration
+## Usage: pwa-front
+## Example: "ddev pwa-front setup"
+
+case $1 in
+      rebuild)
+	  cd front
+    yarn build
+    ;;
+      start)
+
+    cd front
+    NODE_TLS_REJECT_UNAUTHORIZED=0 yarn start
+    ;;
+      stop)
+
+    killall -9 node
+	;;
+esac
