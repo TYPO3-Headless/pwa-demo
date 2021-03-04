@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+## Description: PWA Front ddev host commands for frontend setup
+## Usage: setup-pwa-front
+## Example: "ddev setup-pwa-front first-time"
+
+YELLOW='\033[1;33m'
+NC='\033[0m'
+
+bold=$(tput bold)
+normal=$(tput sgr0)
+
+case $1 in
+    first-time)
+  echo -e "${bold}Frontend setup:"
+  if [ ! -d "front/node_modules" ]; then
+      echo -e "${bold}Creating frontend app: \n"
+      cd front
+      npm init nuxt-typo3 --answers "$(< ./recommended.json)"
+    else
+      echo -e "${bold}Frontend app already exists."
+  fi
+	;;
+    post-start-info)
+  echo -e "${bold}Frontend has been rebuilt.\n\nUse ${YELLOW}ddev pwa-front start ${NC}${bold}to start frontend service and get server output in this console."
+	;;
+esac

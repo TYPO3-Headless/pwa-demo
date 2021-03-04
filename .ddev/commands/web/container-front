@@ -6,15 +6,13 @@
 
 case $1 in
       rebuild)
-	  cd .ddev && cp .front.env ../front/su-new-front/.env
-	  cd ../front
-    yarn install
+	  cd front
     yarn build
     ;;
       start)
 
     cd front
-    NODE_TLS_REJECT_UNAUTHORIZED=0 NODE_ENV=test yarn start
+    NODE_TLS_REJECT_UNAUTHORIZED=0 yarn start
     ;;
       stop)
 

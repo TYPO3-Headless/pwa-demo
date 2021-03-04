@@ -16,9 +16,9 @@ hooks:
   post-start:
   - exec: /var/www/html/.ddev/import-if-empty.sh
   - exec: composer install --ignore-platform-reqs
-  - exec: cd front && npm init nuxt-typo3 --answers "$(< ./recommended.json)"
-  - exec: cd front && yarn build
-  - exec: cd front && yarn start&
+  - exec-host: ddev setup-pwa-front first-time
+  - exec-host: ddev pwa-front rebuild
+  - exec-host: ddev setup-pwa-front post-start-info
 use_dns_when_possible: true
 composer_version: ""
 

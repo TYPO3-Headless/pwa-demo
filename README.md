@@ -27,6 +27,11 @@ cd pwa-demo
 ```
 ddev start
 ```
+
+3) Then, please type
+```
+ddev pwa-front start
+```
 3) Access frontend in your browser: ```pwa-demo.ddev.site```.
 4) Access TYPO3 backend: ```api.pwa-demo.ddev.site/typo3```.
 
