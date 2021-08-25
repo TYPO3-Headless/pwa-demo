@@ -29,6 +29,12 @@ return [
         'linkvalidator' => [
             'packagePath' => 'typo3/sysext/linkvalidator/',
         ],
+        'reports' => [
+            'packagePath' => 'typo3/sysext/reports/',
+        ],
+        'redirects' => [
+            'packagePath' => 'typo3/sysext/redirects/',
+        ],
         'recordlist' => [
             'packagePath' => 'typo3/sysext/recordlist/',
         ],
@@ -41,20 +47,11 @@ return [
         'form' => [
             'packagePath' => 'typo3/sysext/form/',
         ],
-        'reports' => [
-            'packagePath' => 'typo3/sysext/reports/',
-        ],
         'setup' => [
             'packagePath' => 'typo3/sysext/setup/',
         ],
         'rte_ckeditor' => [
             'packagePath' => 'typo3/sysext/rte_ckeditor/',
-        ],
-        'taskcenter' => [
-            'packagePath' => 'typo3/sysext/taskcenter/',
-        ],
-        'sys_action' => [
-            'packagePath' => 'typo3/sysext/sys_action/',
         ],
         'about' => [
             'packagePath' => 'typo3/sysext/about/',
@@ -71,9 +68,6 @@ return [
         'extensionmanager' => [
             'packagePath' => 'typo3/sysext/extensionmanager/',
         ],
-        'feedit' => [
-            'packagePath' => 'typo3/sysext/feedit/',
-        ],
         'felogin' => [
             'packagePath' => 'typo3/sysext/felogin/',
         ],
@@ -85,15 +79,6 @@ return [
         ],
         'lowlevel' => [
             'packagePath' => 'typo3/sysext/lowlevel/',
-        ],
-        'opendocs' => [
-            'packagePath' => 'typo3/sysext/opendocs/',
-        ],
-        'redirects' => [
-            'packagePath' => 'typo3/sysext/redirects/',
-        ],
-        'rsaauth' => [
-            'packagePath' => 'typo3/sysext/rsaauth/',
         ],
         'seo' => [
             'packagePath' => 'typo3/sysext/seo/',

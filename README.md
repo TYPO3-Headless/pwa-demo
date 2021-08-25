@@ -22,13 +22,36 @@ git clone https://github.com/TYPO3-Initiatives/pwa-demo.git
 cd pwa-demo
 ```
 
-2) Boot up ddev docker containers
+2) Boot up ddev docker containers 
 
 ```
 ddev start
 ```
-3) Access frontend in your browser: ```pwa-demo.ddev.site```.
-4) Access TYPO3 backend: ```api.pwa-demo.ddev.site/typo3```.
+
+3) Add to the nuxt.config.js inside front directory following settings:
+```
+  axios: {
+    headers: {
+      common: {
+        Accept: 'application/json'
+      }
+    }
+  },
+```
+
+4) Rebuild frontend app with new settings 
+```
+ddev pwa-front rebuild
+```
+
+This will finish the first-time setup part.
+
+5) Then, please type 
+```
+ddev pwa-front start
+```
+6) Access frontend in your browser: ```pwa-demo.ddev.site```.
+7) Access TYPO3 backend: ```api.pwa-demo.ddev.site/typo3```.
 
 Credentials to TYPO3 backend are: ```admin:password```
 
@@ -57,18 +80,8 @@ To play with sources of [nuxt-typo3](https://github.com/TYPO3-Initiatives/nuxt-t
     ```bash
     yarn link "nuxt-typo3"
     ```
-5. Change `nuxt.config.js` in `front` directory
-   ```js
-    typo3: {
-        ...
-        api: {
-            baseURL: 'http://api.pwa-demo.ddev.site'
-        },
-        ...
-    }
-    ```
-6. Call `yarn dev` inside of `front` directory
+5. Call `yarn dev` inside of `front` directory
     ```bash
     yarn dev
     ```
-7. Make some changes in `nuxt-typo3` directory - your front app should be triggered and rebuilded with new changes in `nuxt-typo3` sources.
+6. Make some changes in `nuxt-typo3` directory - your front app should be triggered and rebuilded with new changes in `nuxt-typo3` sources.

@@ -1,7 +1,7 @@
 name: pwa-demo
 type: typo3
 docroot: public
-php_version: "7.2"
+php_version: "7.4"
 webserver_type: nginx-fpm
 router_http_port: "80"
 router_https_port: "443"
@@ -11,13 +11,14 @@ additional_hostnames:
 additional_fqdns: []
 mariadb_version: "10.2"
 mysql_version: ""
+provider: default
 hooks:
   post-start:
-  - exec: composer install -o
   - exec: /var/www/html/.ddev/import-if-empty.sh
-  - exec: cd front && npm init nuxt-typo3 --answers "$(< ./recommended.json)"
-  - exec: cd front && yarn build
-  - exec: cd front && yarn start&
+  - exec: composer install --ignore-platform-reqs
+  - exec-host: ddev setup-pwa-front first-time
+  - exec-host: ddev pwa-front rebuild
+  - exec-host: ddev setup-pwa-front post-start-info
 use_dns_when_possible: true
 web_environment: []
 composer_version: "1"
