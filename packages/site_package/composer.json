@@ -5,7 +5,7 @@
   "minimum-stability": "stable",
   "description": "Site package",
   "require": {
-    "typo3/cms-core": "^9.5"
+    "typo3/cms-core": "^11.5"
   },
   "authors": [
     {
