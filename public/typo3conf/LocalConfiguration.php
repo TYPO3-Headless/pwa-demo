@@ -68,6 +68,8 @@ return [
         'exceptionalErrors' => 4096,
         'features' => [
             'unifiedPageTranslationHandling' => true,
+            'headless.redirectMiddlewares' => true,
+            'headless.elementBodyResponse' => true
         ],
         'sitename' => 'PWA Demo',
         'systemMaintainers' => [
