@@ -3,6 +3,13 @@
       {
         "type": "composer",
         "url": "https://composer.typo3.org/"
+      },
+      {
+        "type": "path",
+        "url": "packages/*",
+        "options": {
+          "symlink": true
+        }
       }
     ],
     "name": "friendsoftypo/pwa-demo",
@@ -14,42 +21,31 @@
         }
     ],
     "require": {
-        "php": "^7.4",
-        "helhum/typo3-console": "^6.4.0",
-        "typo3/minimal": "^10.4",
-        "typo3/cms-about": "^10.4",
-        "typo3/cms-adminpanel": "^10.4",
-        "typo3/cms-belog": "^10.4",
-        "typo3/cms-beuser": "^10.4",
-        "typo3/cms-felogin": "^10.4",
-        "typo3/cms-fluid-styled-content": "^10.4",
-        "typo3/cms-form": "^10.4",
-        "typo3/cms-impexp": "^10.4",
-        "typo3/cms-info": "^10.4",
-        "typo3/cms-redirects": "^10.4",
-        "typo3/cms-reports": "^10.4",
-        "typo3/cms-rte-ckeditor": "^10.4",
-        "typo3/cms-setup": "^10.4",
-        "typo3/cms-seo": "^10.4",
-        "typo3/cms-sys-note": "^10.4",
-        "typo3/cms-scheduler": "^10.4",
-        "typo3/cms-t3editor": "^10.4",
-        "typo3/cms-tstemplate": "^10.4",
-        "typo3/cms-viewpage": "^10.4",
-        "typo3/cms-filelist": "^10.4",
-        "typo3/cms-filemetadata": "^10.4",
-        "typo3/cms-lowlevel": "^10.4",
-        "typo3/cms-linkvalidator": "^10.4",
-        "typo3/cms-recycler": "^10.4",
-        "friendsoftypo3/headless": "@dev"
-    },
-    "scripts": {
-      "typo3-cms-scripts": [
-        "typo3 extension:activate site_package"
-      ],
-      "post-autoload-dump": [
-        "@typo3-cms-scripts"
-      ]
+        "php": "^8.0",
+        "helhum/typo3-console": "^7.0.3",
+        "typo3/minimal": "^11.5",
+        "typo3/cms-belog": "^11.5",
+        "typo3/cms-beuser": "^11.5",
+        "typo3/cms-felogin": "^11.5",
+        "typo3/cms-fluid-styled-content": "^11.5",
+        "typo3/cms-form": "^11.5",
+        "typo3/cms-info": "^11.5",
+        "typo3/cms-redirects": "^11.5",
+        "typo3/cms-reports": "^11.5",
+        "typo3/cms-rte-ckeditor": "^11.5",
+        "typo3/cms-setup": "^11.5",
+        "typo3/cms-seo": "^11.5",
+        "typo3/cms-sys-note": "^11.5",
+        "typo3/cms-scheduler": "^11.5",
+        "typo3/cms-t3editor": "^11.5",
+        "typo3/cms-tstemplate": "^11.5",
+        "typo3/cms-viewpage": "^11.5",
+        "typo3/cms-filelist": "^11.5",
+        "typo3/cms-filemetadata": "^11.5",
+        "typo3/cms-lowlevel": "^11.5",
+        "typo3/cms-linkvalidator": "^11.5",
+        "typo3/cms-recycler": "^11.5",
+        "friendsoftypo3/headless": "^v3.0.0-beta"
     },
     "config": {
       "sort-packages": true,

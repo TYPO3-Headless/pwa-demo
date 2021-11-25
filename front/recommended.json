@@ -14,5 +14,6 @@
   "api": "https://pwa-demo.ddev.site/api",
   "cert": "unsafe",
   "locales":["en","pl", "de"],
-  "locale":["en"]
+  "locale":["en"],
+  "typoVersion": "alpha"
 }

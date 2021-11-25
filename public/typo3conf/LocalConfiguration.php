@@ -3,8 +3,7 @@ return [
     'BE' => [
         'debug' => false,
         'explicitADmode' => 'explicitAllow',
-        'installToolPassword' => '$2y$12$V8Xxf88bKuyJ6xlNnGQbKuBer/rDnBig8FknlCfSbSUchD8q686Pu',
-        'loginSecurityLevel' => 'normal',
+        'installToolPassword' => '$2y$12$N3yVqg9ZUD4zcrSFLi2BTujSg06klJDdFyyBzcUObqeKXGBF5gP8q',
         'passwordHashing' => [
             'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\BcryptPasswordHash',
             'options' => [],
@@ -27,6 +26,7 @@ return [
             'loginFootnote' => '',
             'loginHighlightColor' => '',
             'loginLogo' => 'EXT:bootstrap_package/Resources/Public/Images/Backend/login-logo.svg',
+            'loginLogoAlt' => '',
         ],
         'extensionmanager' => [
             'automaticInstallation' => '1',
@@ -39,7 +39,6 @@ return [
     ],
     'FE' => [
         'debug' => false,
-        'loginSecurityLevel' => 'normal',
         'passwordHashing' => [
             'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\BcryptPasswordHash',
             'options' => [],
@@ -69,6 +68,8 @@ return [
         'exceptionalErrors' => 4096,
         'features' => [
             'unifiedPageTranslationHandling' => true,
+            'headless.redirectMiddlewares' => true,
+            'headless.elementBodyResponse' => true
         ],
         'sitename' => 'PWA Demo',
         'systemMaintainers' => [
