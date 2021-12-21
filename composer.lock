@@ -851,12 +851,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-Initiatives/headless.git",
-                "reference": "f5c606c60579276d408cc4b4c70d578efb34868f"
+                "reference": "5ac4b6d75d6213cb64c1e0cc19ef324b096e8553"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-Initiatives/headless/zipball/f5c606c60579276d408cc4b4c70d578efb34868f",
-                "reference": "f5c606c60579276d408cc4b4c70d578efb34868f",
+                "url": "https://api.github.com/repos/TYPO3-Initiatives/headless/zipball/5ac4b6d75d6213cb64c1e0cc19ef324b096e8553",
+                "reference": "5ac4b6d75d6213cb64c1e0cc19ef324b096e8553",
                 "shasum": ""
             },
             "require": {
@@ -921,7 +921,7 @@
                 "issues": "https://github.com/TYPO3-Initiatives/headless/issues",
                 "source": "https://github.com/TYPO3-Initiatives/headless/tree/TASK/Felogin-adjustments"
             },
-            "time": "2021-12-16T12:50:54+00:00"
+            "time": "2021-12-21T16:44:52+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
