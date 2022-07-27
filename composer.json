@@ -21,7 +21,7 @@
         }
     ],
     "require": {
-        "php": "^8.0",
+        "php": "^8.1",
         "helhum/typo3-console": "^7.0.3",
         "typo3/minimal": "^11.5",
         "typo3/cms-belog": "^11.5",
@@ -45,12 +45,16 @@
         "typo3/cms-lowlevel": "^11.5",
         "typo3/cms-linkvalidator": "^11.5",
         "typo3/cms-recycler": "^11.5",
-        "friendsoftypo3/headless": "^v3.0.0-beta"
+        "friendsoftypo3/headless": "^v3"
     },
     "config": {
       "sort-packages": true,
       "bin-dir": "bin",
-      "vendor-dir": "vendor"
+      "vendor-dir": "vendor",
+        "allow-plugins": {
+            "typo3/class-alias-loader": true,
+            "typo3/cms-composer-installers": true
+        }
     },
     "extra": {
       "typo3/minimal": {
