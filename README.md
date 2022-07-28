@@ -11,7 +11,7 @@ It's based on
 
 
 ## Requirements
-All you need is [ddev](https://ddev.readthedocs.io/en/stable/) in version at least v1.11.2.
+All you need is [ddev](https://ddev.readthedocs.io/en/stable/) in version at least v1.19.3.
 
 ## Installation
 
