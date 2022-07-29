@@ -45,7 +45,8 @@
         "typo3/cms-lowlevel": "^11.5",
         "typo3/cms-linkvalidator": "^11.5",
         "typo3/cms-recycler": "^11.5",
-        "friendsoftypo3/headless": "^v3"
+        "friendsoftypo3/headless": "^v3",
+        "pwa-demo/site-package": "^1"
     },
     "config": {
       "sort-packages": true,

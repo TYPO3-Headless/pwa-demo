@@ -9,7 +9,7 @@
 /public/typo3conf/ENABLE_INSTALL_TOOL
 /public/typo3conf/realurl_autoconf.php
 /public/typo3conf/l10n
-/public/typo3conf/ext/headless
+/public/typo3conf/ext
 /public/typo3temp
 /public/uploads
 /var

@@ -1,1 +1,4 @@
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:site_package/Configuration/TypoScript/Plain/" extensions="typoscript">
+@import 'EXT:seo/Configuration/TypoScript/XmlSitemap/setup.typoscript'
+@import 'EXT:headless/Configuration/TypoScript/setup.typoscript'
+
+@import 'EXT:site_package/Configuration/TypoScript/Plain/*.typoscript'
