@@ -1,5 +1,5 @@
 {
-  "name": "pwa-demo/site_package",
+  "name": "pwa-demo/site-package",
   "type": "typo3-cms-extension",
   "version": "1.0.0",
   "minimum-stability": "stable",
@@ -17,5 +17,10 @@
       "role": "Developer",
       "email": "extensions@macopedia.pl"
     }
-  ]
+  ],
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "site_package"
+    }
+  }
 }

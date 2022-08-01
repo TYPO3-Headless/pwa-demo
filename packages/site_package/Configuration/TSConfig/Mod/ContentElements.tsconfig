@@ -1,1 +1,1 @@
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:site_package/Configuration/TSConfig/Mod/ContentElements/" extension="tsconfig">
+@import 'EXT:site_package/Configuration/TSConfig/Mod/ContentElements/*.tsconfig'
