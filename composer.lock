@@ -2322,7 +2322,7 @@
             "dist": {
                 "type": "path",
                 "url": "packages/site_package",
-                "reference": "41a9d582e64f20171e174e249267c05b16021cc6"
+                "reference": "0e5ea271d4af53993e5d3113538d19ea7d2e8ad4"
             },
             "require": {
                 "typo3/cms-core": "^11.5"
@@ -2331,6 +2331,11 @@
             "extra": {
                 "typo3/cms": {
                     "extension-key": "site_package"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Pwademo\\Sitepackage\\": "Classes"
                 }
             },
             "authors": [

@@ -1,0 +1,23 @@
+tt_content.list =< lib.contentElementWithHeader
+tt_content.list {
+    fields {
+        content {
+            fields {
+                data = CASE
+                data {
+                    key.field = list_type
+
+                    sitepackage_demoplugin = USER
+                    sitepackage_demoplugin {
+                        userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+                        vendorName = PwaDemo
+                        extensionName = SitePackage
+                        pluginName = DemoPlugin
+                        controller = Demo
+                        settings < plugin.tx_sitepackage.settings
+                    }
+                }
+            }
+        }
+    }
+}

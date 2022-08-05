@@ -4,6 +4,11 @@
   "version": "1.0.0",
   "minimum-stability": "stable",
   "description": "Site package",
+  "autoload": {
+    "psr-4": {
+      "Pwademo\\Sitepackage\\": "Classes"
+    }
+  },
   "require": {
     "typo3/cms-core": "^11.5"
   },
