@@ -1,5 +1,5 @@
 {
-  "name": "pwa-demo/site-package",
+  "name": "pwademo/site-package",
   "type": "typo3-cms-extension",
   "version": "1.0.0",
   "minimum-stability": "stable",

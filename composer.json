@@ -12,7 +12,7 @@
         }
       }
     ],
-    "name": "friendsoftypo/pwa-demo",
+    "name": "friendsoftypo/pwademo",
     "license": "GPL-2.0-or-later",
     "authors": [
         {
@@ -25,7 +25,7 @@
         "friendsoftypo3/headless": "^v3",
         "helhum/typo3-console": "^7.0.3",
         "mask/mask": "^7.2",
-        "pwa-demo/site-package": "^1",
+        "pwademo/site-package": "^1",
         "typo3/cms-belog": "^11.5",
         "typo3/cms-beuser": "^11.5",
         "typo3/cms-felogin": "^11.5",

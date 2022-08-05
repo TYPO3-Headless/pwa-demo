@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f30b46bf24379f7b05b83b69e831b2fe",
+    "content-hash": "8bc03f09a01a4a2ad00d801dabcf04ab",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -836,16 +836,16 @@
         },
         {
             "name": "friendsoftypo3/headless",
-            "version": "v3.0.4",
+            "version": "v3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-Headless/headless.git",
-                "reference": "0d78fc6a8209de4af1811ccb76b1bdf6669d1d2f"
+                "reference": "4569d2a536b920105e9796b072ab0f7ddab4fe2d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-Headless/headless/zipball/0d78fc6a8209de4af1811ccb76b1bdf6669d1d2f",
-                "reference": "0d78fc6a8209de4af1811ccb76b1bdf6669d1d2f",
+                "url": "https://api.github.com/repos/TYPO3-Headless/headless/zipball/4569d2a536b920105e9796b072ab0f7ddab4fe2d",
+                "reference": "4569d2a536b920105e9796b072ab0f7ddab4fe2d",
                 "shasum": ""
             },
             "require": {
@@ -858,6 +858,7 @@
                 "friendsofphp/php-cs-fixer": "^3.1",
                 "helmich/typo3-typoscript-lint": "^2.1",
                 "justinrainbow/json-schema": "^5.2",
+                "php-coveralls/php-coveralls": "^2.5.2",
                 "phpspec/prophecy-phpunit": "^2.0",
                 "phpstan/extension-installer": "^1.1",
                 "phpstan/phpstan": "^0.12.99",
@@ -909,9 +910,9 @@
             ],
             "support": {
                 "issues": "https://github.com/TYPO3-Headless/headless/issues",
-                "source": "https://github.com/TYPO3-Headless/headless/tree/v3.0.4"
+                "source": "https://github.com/TYPO3-Headless/headless/tree/v3.1.1"
             },
-            "time": "2022-04-20T15:02:41+00:00"
+            "time": "2022-08-03T21:45:33+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -2316,12 +2317,12 @@
             "time": "2021-05-03T11:20:27+00:00"
         },
         {
-            "name": "pwa-demo/site-package",
+            "name": "pwademo/site-package",
             "version": "1.0.0",
             "dist": {
                 "type": "path",
                 "url": "packages/site_package",
-                "reference": "7f0b54ff99a63aec3d1c713f5940539266fdd014"
+                "reference": "41a9d582e64f20171e174e249267c05b16021cc6"
             },
             "require": {
                 "typo3/cms-core": "^11.5"
