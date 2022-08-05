@@ -1,6 +1,7 @@
 base: api.pwa-demo.ddev.site
 baseVariants: {  }
 errorHandling: {  }
+headless: true
 languages:
   -
     languageId: '0'
