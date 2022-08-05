@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8b405f2bb18d631885befe3ba4ccbc96",
+    "content-hash": "f30b46bf24379f7b05b83b69e831b2fe",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -1465,6 +1465,99 @@
                 "source": "https://github.com/lolli42/FineDiff/tree/1.0.2"
             },
             "time": "2022-05-23T07:44:28+00:00"
+        },
+        {
+            "name": "mask/mask",
+            "version": "v7.2.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Gernott/mask.git",
+                "reference": "c9f74bbd750964647028ca62c85140b6edcccae7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Gernott/mask/zipball/c9f74bbd750964647028ca62c85140b6edcccae7",
+                "reference": "c9f74bbd750964647028ca62c85140b6edcccae7",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": "^7.2 || ^8.0",
+                "typo3/cms-backend": "^10.4.16 || ^11.5.0",
+                "typo3/cms-core": "^10.4.16 || ^11.5.0",
+                "typo3/cms-fluid": "^10.4.16 || ^11.5.0",
+                "typo3/cms-fluid-styled-content": "^10.4.16 || ^11.5.0"
+            },
+            "replace": {
+                "typo3-ter/mask": "self.version"
+            },
+            "require-dev": {
+                "bnf/phpstan-psr-container": "^1.0",
+                "friendsofphp/php-cs-fixer": "^3.4",
+                "friendsoftypo3/phpstan-typo3": "^0.9.0",
+                "jangregor/phpstan-prophecy": "^1.0",
+                "phpstan/phpstan": "^1.4",
+                "phpstan/phpstan-phpunit": "^1.0",
+                "phpunit/phpunit": "^8.4",
+                "typo3/coding-standards": "^0.5",
+                "typo3/tailor": "^1.2",
+                "typo3/testing-framework": "^6"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "mask",
+                    "web-dir": ".Build/Web"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "MASK\\Mask\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "WEBprofil - Gernot Ploiner e.U.",
+                    "email": "office@webprofil.at",
+                    "homepage": "https://www.webprofil.at",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Nikita Hovratov",
+                    "email": "info@nikita-hovratov.de",
+                    "homepage": "https://www.nikita-hovratov.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Create your own content elements and page templates. Easy to use, even without programming skills because of the comfortable drag and drop user interface. Stored in structured database tables. Style your frontend with Fluid tags. Ideal, if you want to switch from Templavoila.",
+            "homepage": "https://extensions.typo3.org/extension/mask",
+            "keywords": [
+                "TYPO3 CMS",
+                "contentelements",
+                "mask",
+                "wizard"
+            ],
+            "support": {
+                "chat": "https://typo3.slack.com/archives/C0FD5F6P2",
+                "docs": "https://docs.typo3.org/p/mask/mask/main/en-us/",
+                "issues": "https://github.com/gernott/mask/issues/",
+                "source": "https://github.com/gernott/mask"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/nhovratov",
+                    "type": "Nikita Hovratov (Developer)"
+                },
+                {
+                    "url": "https://github.com/sponsors/Gernott",
+                    "type": "WEBprofil - Gernot Ploiner e.U. (Founder)"
+                }
+            ],
+            "time": "2022-07-12T12:33:13+00:00"
         },
         {
             "name": "masterminds/html5",
@@ -7080,6 +7173,64 @@
             "support": {
                 "chat": "https://typo3.org/help",
                 "docs": "https://docs.typo3.org",
+                "issues": "https://forge.typo3.org",
+                "source": "https://github.com/typo3/typo3"
+            },
+            "time": "2022-07-12T09:04:24+00:00"
+        },
+        {
+            "name": "typo3/cms-workspaces",
+            "version": "v11.5.13",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3-CMS/workspaces.git",
+                "reference": "61871b0c1b69160df023b2c83803966de3d2c498"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3-CMS/workspaces/zipball/61871b0c1b69160df023b2c83803966de3d2c498",
+                "reference": "61871b0c1b69160df023b2c83803966de3d2c498",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": "11.5.13"
+            },
+            "conflict": {
+                "typo3/cms": "*"
+            },
+            "replace": {
+                "typo3/cms-version": "*"
+            },
+            "type": "typo3-cms-framework",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "11.5.x-dev"
+                },
+                "typo3/cms": {
+                    "extension-key": "workspaces"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TYPO3\\CMS\\Workspaces\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "TYPO3 Core Team",
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Adds workspaces functionality with custom stages to TYPO3.",
+            "homepage": "https://typo3.org",
+            "support": {
+                "chat": "https://typo3.org/help",
+                "docs": "https://docs.typo3.org/c/typo3/cms-workspaces/11.5/en-us",
                 "issues": "https://forge.typo3.org",
                 "source": "https://github.com/typo3/typo3"
             },
