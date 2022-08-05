@@ -6,7 +6,7 @@
   "ui": "none",
   "server": "none",
   "language": "js",
-  "features": ["pwa","typo"],
+  "features": ["pwa","typo", "skin"],
   "linter": ["eslint","prettier"],
   "test": "jest",
   "mode": "universal",

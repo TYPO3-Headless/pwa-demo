@@ -24,7 +24,7 @@ hooks:
 use_dns_when_possible: true
 composer_version: ""
 web_environment: []
-nodejs_version: "12"
+nodejs_version: "14"
 
 # Key features of ddev's config.yaml:
 
