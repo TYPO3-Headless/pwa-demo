@@ -3,7 +3,7 @@ return [
     'BE' => [
         'debug' => false,
         'explicitADmode' => 'explicitAllow',
-        'installToolPassword' => '$2y$12$N3yVqg9ZUD4zcrSFLi2BTujSg06klJDdFyyBzcUObqeKXGBF5gP8q',
+        'installToolPassword' => '$2a$12$eCPenIJ4AUYrkXke5DpuVuNX5gKxGSzBu2ExOdYrDwTXtOT2kUiK.',
         'passwordHashing' => [
             'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\BcryptPasswordHash',
             'options' => [],
@@ -31,6 +31,23 @@ return [
         'extensionmanager' => [
             'automaticInstallation' => '1',
             'offlineMode' => '0',
+        ],
+        'headless' => [
+            'yamlPath' => 'typo3conf/ext/headless/Configuration/Yaml/HeadlessModule.yml',
+        ],
+        'mask' => [
+            'backend' => 'EXT:site_package/Resources/Private/Mask/Backend/Templates',
+            'backend_layouts_folder' => '',
+            'backendlayout_pids' => '0',
+            'content' => 'EXT:site_package/Resources/Private/Mask/Frontend/Templates',
+            'content_elements_folder' => '',
+            'json' => 'EXT:site_package/Configuration/Mask/mask.json',
+            'layouts' => 'EXT:site_package/Resources/Private/Mask/Frontend/Layouts',
+            'layouts_backend' => 'EXT:site_package/Resources/Private/Mask/Backend/Layouts',
+            'loader_identifier' => 'json',
+            'partials' => 'EXT:site_package/Resources/Private/Mask/Frontend/Partials',
+            'partials_backend' => 'EXT:site_package/Resources/Private/Mask/Backend/Partials',
+            'preview' => 'EXT:site_package/Resources/Public/Mask/',
         ],
         'scheduler' => [
             'maxLifetime' => '1440',
@@ -67,9 +84,11 @@ return [
         'encryptionKey' => '517d47fd2681627245de9c4a4a726ac2e833c8bca7c5c0ad543c12e9f2ddbd8803a83044b6a4f247b26ceddf03be451d',
         'exceptionalErrors' => 4096,
         'features' => [
+            'headless.frontendUrls' => false,
+            'headless.workspaces' => false,
+            'headless.elementBodyResponse' => false,
+            'headless.redirectMiddlewares' => false,
             'unifiedPageTranslationHandling' => true,
-            'headless.redirectMiddlewares' => true,
-            'headless.elementBodyResponse' => true
         ],
         'sitename' => 'PWA Demo',
         'systemMaintainers' => [
