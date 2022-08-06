@@ -1,0 +1,14 @@
+mod.wizards.newContentElement.wizardItems.common {
+    elements {
+        sitepackage_slider {
+            title = Slider
+            description = Slider element
+            iconIdentifier = content-text
+            tt_content_defValues {
+                CType = sitepackage_slider
+            }
+        }
+    }
+
+    show := addToList(sitepackage_slider)
+}
