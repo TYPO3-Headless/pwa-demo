@@ -18,6 +18,11 @@
       "email": "extensions@macopedia.pl"
     }
   ],
+  "autoload": {
+    "psr-4": {
+      "Pwademo\\Sitepackage\\": "Classes"
+    }
+  },
   "extra": {
     "typo3/cms": {
       "extension-key": "site_package"

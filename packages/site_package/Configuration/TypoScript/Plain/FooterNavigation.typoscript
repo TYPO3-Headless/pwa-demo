@@ -1,0 +1,17 @@
+initialData.10.fields {
+    footerNavigation = JSON
+    footerNavigation {
+        dataProcessing {
+            10 = FriendsOfTYPO3\Headless\DataProcessing\MenuProcessor
+            10 {
+                special = directory
+                special.value = 30
+                levels = 2
+                expandAll = 1
+                includeSpacer = 1
+                titleField = nav_title // title
+                as = footerNavigation
+            }
+        }
+    }
+}

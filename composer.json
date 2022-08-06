@@ -23,6 +23,8 @@
     "require": {
         "php": "^8.1",
         "friendsoftypo3/headless": "^v3",
+        "friendsoftypo3/headless_news": "^2.0",
+        "georgringer/news": "^9.4",
         "helhum/typo3-console": "^7.0.3",
         "mask/mask": "^7.2",
         "pwademo/site-package": "^1",

@@ -1,4 +1,5 @@
-base: api.pwa-demo.ddev.site
+base: https://api.pwa-demo.ddev.site
+frontendBase: https://pwa-demo.ddev.site
 baseVariants: {  }
 errorHandling: {  }
 headless: true
@@ -45,3 +46,52 @@ languages:
     enabled: true
 rootPageId: 1
 routes: {  }
+routeEnhancers:
+  News:
+    type: Extbase
+    extension: News
+    plugin: Pi1
+    routes:
+      - routePath: '/'
+        _controller: 'News::list'
+      - routePath: '/page-{page}'
+        _controller: 'News::list'
+        _arguments:
+          page: 'currentPage'
+      - routePath: '/{news-title}'
+        _controller: 'News::detail'
+        _arguments:
+          news-title: news
+      - routePath: '/{category-name}'
+        _controller: 'News::list'
+        _arguments:
+          category-name: overwriteDemand/categories
+      - routePath: '/{tag-name}'
+        _controller: 'News::list'
+        _arguments:
+          tag-name: overwriteDemand/tags
+    defaultController: 'News::list'
+    defaults:
+      page: '0'
+    aspects:
+      news-title:
+        type: PersistedAliasMapper
+        tableName: tx_news_domain_model_news
+        routeFieldName: path_segment
+      page:
+        type: StaticRangeMapper
+        start: '1'
+        end: '100'
+      category-name:
+        type: PersistedAliasMapper
+        tableName: sys_category
+        routeFieldName: slug
+      tag-name:
+        type: PersistedAliasMapper
+        tableName: tx_news_domain_model_tag
+        routeFieldName: slug
+  PageTypeSuffix:
+    type: PageType
+    map:
+      'feed.xml': 9818
+      'calendar.ical': 9819
