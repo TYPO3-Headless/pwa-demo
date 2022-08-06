@@ -1,0 +1,42 @@
+tt_content.sitepackage_slider =< lib.contentElementWithHeader
+tt_content.sitepackage_slider {
+ fields {
+    content {
+        fields {
+            slides = COA
+            slides {
+                10 = RECORDS
+                10 {
+                    source.field = tx_sitepackage_slide
+                    tables = tx_sitepackage_slide
+                    conf {
+                        tx_sitepackage_slide.stdWrap.wrap = |###BREAK###
+                    }
+                }
+                stdWrap {
+                    innerWrap = [|]
+                    split {
+                        token = ###BREAK###
+                        cObjNum = 1 |*|2|*| 3
+                        1 {
+                            current = 1
+                            stdWrap.wrap = |
+                        }
+
+                        2 {
+                            current = 1
+                            stdWrap.wrap = ,|
+                        }
+
+                        3 {
+                            current = 1
+                            stdWrap.wrap = |
+                        }
+                    }
+                }
+            }
+        }
+        }
+    }
+ }
+}

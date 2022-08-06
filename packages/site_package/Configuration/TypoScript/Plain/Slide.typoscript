@@ -1,0 +1,28 @@
+tx_sitepackage_slide = JSON
+tx_sitepackage_slide {
+    fields {
+        title = TEXT
+        title {
+            field = title
+        }
+        test = TEXT
+        test {
+            value = test
+        }
+        bodytext = TEXT
+        bodytext {
+            field = bodytext
+            parseFunc = lib.parseFunc_links
+        }
+        image = TEXT
+        image {
+            dataProcessing {
+                10 = FriendsOfTYPO3\Headless\DataProcessing\FilesProcessor
+                10 {
+                    references.fieldName = image
+                    as = files
+                }
+            }
+        }
+    }
+}
