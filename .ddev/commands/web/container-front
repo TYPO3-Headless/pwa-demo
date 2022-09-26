@@ -12,7 +12,7 @@ case $1 in
       start)
 
     cd front
-    NODE_TLS_REJECT_UNAUTHORIZED=0 yarn start
+    NODE_EXTRA_CA_CERTS=`ls /usr/local/share/ca-certificates/mkcert_*.crt` yarn start
     ;;
       stop)
 
