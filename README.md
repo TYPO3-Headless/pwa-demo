@@ -32,8 +32,8 @@ ddev start
 ```
 ddev pwa-front start
 ```
-3) Access frontend in your browser: ```pwa-demo.ddev.site```.
-4) Access TYPO3 backend: ```api.pwa-demo.ddev.site/typo3```.
+3) Access frontend in your browser: https://pwa-demo.ddev.site
+4) Access TYPO3 backend: https://api.pwa-demo.ddev.site/typo3
 
 Credentials to TYPO3 backend are: ```admin:password```
 
