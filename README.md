@@ -40,11 +40,19 @@ Credentials to TYPO3 backend are: ```admin:password```
 ## Development
 Development for this extension is happening as part of the TYPO3 PWA initiative, see https://typo3.org/community/teams/typo3-development/initiatives/pwa/
 
+## Play with Front-end
+To run Nuxt.js in development mode please type:
+
+```
+ddev pwa-front dev
+```
+
+Please noticed that on macOS Webpack process is running inside the ddev so it might be slower than development on localhost - however, it's totally fine to play and make some simple changes.
 
 ## nuxt-typo3 development together with TYPO3 PWA Demo API
 
 This ddev repository provides working application in production mode.
-To play with sources of [nuxt-typo3](https://github.com/TYPO3-Initiatives/nuxt-typo3) plugin based on API created by this ddev package just:
+To play with sources of [nuxt-typo3](https://github.com/TYPO3-Initiatives/nuxt-typo3) plugin please follow steps:
 
 1. Clone [nuxt-typo3](https://github.com/TYPO3-Initiatives/nuxt-typo3) inside of this repository.
    ```bash
@@ -54,7 +62,7 @@ To play with sources of [nuxt-typo3](https://github.com/TYPO3-Initiatives/nuxt-t
     ```bash
     cd nuxt-typo3 && yarn install
     ```
-3. Inside of nuxt-typo3 directory call `yarn link` - this command create a symlink for sources of nuxt-typo3 (https://classic.yarnpkg.com/en/docs/cli/link/)
+3. Run `ddev ssh`, go to nuxt-typo3 directory and call `yarn link` - this command create a symlink for sources of nuxt-typo3 (https://classic.yarnpkg.com/en/docs/cli/link/)
     ```bash
     yarn link
     ```
