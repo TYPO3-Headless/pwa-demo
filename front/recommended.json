@@ -15,5 +15,5 @@
   "cert": "unsafe",
   "locales":["en","pl", "de"],
   "locale":["en"],
-  "typoVersion": "alpha"
+  "typoVersion": "latest"
 }

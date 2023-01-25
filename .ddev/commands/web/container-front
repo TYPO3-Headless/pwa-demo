@@ -17,5 +17,9 @@ case $1 in
       stop)
 
     killall -9 node
+    ;;
+      dev)
+    cd front
+    NODE_TLS_REJECT_UNAUTHORIZED=0 yarn dev
 	;;
 esac
