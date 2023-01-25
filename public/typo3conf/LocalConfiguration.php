@@ -94,5 +94,6 @@ return [
         'systemMaintainers' => [
             2,
         ],
+        'trustedHostsPattern' => '.*.*'
     ],
 ];
