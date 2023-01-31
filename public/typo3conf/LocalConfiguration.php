@@ -32,9 +32,6 @@ return [
             'automaticInstallation' => '1',
             'offlineMode' => '0',
         ],
-        'headless' => [
-            'yamlPath' => 'typo3conf/ext/headless/Configuration/Yaml/HeadlessModule.yml',
-        ],
         'mask' => [
             'backend' => 'EXT:site_package/Resources/Private/Mask/Backend/Templates',
             'backend_layouts_folder' => '',
@@ -84,16 +81,17 @@ return [
         'encryptionKey' => '517d47fd2681627245de9c4a4a726ac2e833c8bca7c5c0ad543c12e9f2ddbd8803a83044b6a4f247b26ceddf03be451d',
         'exceptionalErrors' => 4096,
         'features' => [
-            'headless.frontendUrls' => false,
-            'headless.workspaces' => false,
             'headless.elementBodyResponse' => false,
+            'headless.frontendUrls' => false,
             'headless.redirectMiddlewares' => false,
+            'headless.workspaces' => false,
+            'headless.simplifiedLinkTarget' => false,
             'unifiedPageTranslationHandling' => true,
         ],
         'sitename' => 'PWA Demo',
         'systemMaintainers' => [
             2,
         ],
-        'trustedHostsPattern' => '.*.*'
+        'trustedHostsPattern' => '.*.*',
     ],
 ];
