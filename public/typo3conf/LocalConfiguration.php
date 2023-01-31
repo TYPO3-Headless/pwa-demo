@@ -83,9 +83,9 @@ return [
         'features' => [
             'headless.elementBodyResponse' => false,
             'headless.frontendUrls' => false,
+            'headless.simplifiedLinkTarget' => false,
             'headless.redirectMiddlewares' => false,
             'headless.workspaces' => false,
-            'headless.simplifiedLinkTarget' => false,
             'unifiedPageTranslationHandling' => true,
         ],
         'sitename' => 'PWA Demo',
