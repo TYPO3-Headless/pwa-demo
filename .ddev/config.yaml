@@ -18,6 +18,7 @@ hooks:
   post-start:
     - exec: /var/www/html/.ddev/import-if-empty.sh
     - exec: composer install
+    - exec: bin/typo3cms database:updateschema
     - exec-host: ddev setup-pwa-front first-time
     - exec-host: ddev pwa-front rebuild
     - exec-host: ddev setup-pwa-front post-start-info
