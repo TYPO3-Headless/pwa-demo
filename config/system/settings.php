@@ -2,7 +2,6 @@
 return [
     'BE' => [
         'debug' => true,
-        'explicitADmode' => 'explicitAllow',
         'installToolPassword' => '$2a$12$eCPenIJ4AUYrkXke5DpuVuNX5gKxGSzBu2ExOdYrDwTXtOT2kUiK.',
         'passwordHashing' => [
             'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\BcryptPasswordHash',
@@ -31,6 +30,27 @@ return [
         'extensionmanager' => [
             'automaticInstallation' => '1',
             'offlineMode' => '0',
+        ],
+        'indexed_search' => [
+            'catdoc' => '/usr/bin/',
+            'debugMode' => '0',
+            'deleteFromIndexAfterEditing' => '1',
+            'disableFrontendIndexing' => '0',
+            'enableMetaphoneSearch' => '1',
+            'flagBitMask' => '192',
+            'fullTextDataLength' => '0',
+            'ignoreExtensions' => '',
+            'indexExternalURLs' => '0',
+            'maxAge' => '0',
+            'maxExternalFiles' => '5',
+            'minAge' => '24',
+            'pdf_mode' => '20',
+            'pdftools' => '/usr/bin/',
+            'ppthtml' => '/usr/bin/',
+            'unrtf' => '/usr/bin/',
+            'unzip' => '/usr/bin/',
+            'useMysqlFulltext' => '0',
+            'xlhtml' => '/usr/bin/',
         ],
         'mask' => [
             'backend' => 'EXT:site_package/Resources/Private/Mask/Backend/Templates',
@@ -65,7 +85,21 @@ return [
         'processor_effects' => true,
         'processor_enabled' => true,
         'processor_path' => '/usr/bin/',
-        'processor_path_lzw' => '/usr/bin/',
+    ],
+    'LOG' => [
+        'TYPO3' => [
+            'CMS' => [
+                'deprecations' => [
+                    'writerConfiguration' => [
+                        'notice' => [
+                            'TYPO3\CMS\Core\Log\Writer\FileWriter' => [
+                                'disabled' => false,
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
     ],
     'MAIL' => [
         'transport' => 'sendmail',
@@ -76,15 +110,40 @@ return [
         'transport_smtp_username' => '',
     ],
     'SYS' => [
-        'devIPmask' => '',
-        'displayErrors' => 0,
+        'caching' => [
+            'cacheConfigurations' => [
+                'hash' => [
+                    'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\FileBackend',
+                ],
+                'imagesizes' => [
+                    'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\SimpleFileBackend',
+                    'options' => [
+                        'compression' => '__UNSET',
+                    ],
+                ],
+                'pages' => [
+                    'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\FileBackend',
+                    'options' => [
+                        'compression' => '__UNSET',
+                    ],
+                ],
+                'rootline' => [
+                    'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\FileBackend',
+                    'options' => [
+                        'compression' => '__UNSET',
+                    ],
+                ],
+            ],
+        ],
+        'devIPmask' => '*',
+        'displayErrors' => 1,
         'encryptionKey' => '517d47fd2681627245de9c4a4a726ac2e833c8bca7c5c0ad543c12e9f2ddbd8803a83044b6a4f247b26ceddf03be451d',
         'exceptionalErrors' => 12290,
         'features' => [
             'headless.elementBodyResponse' => false,
             'headless.frontendUrls' => false,
-            'headless.simplifiedLinkTarget' => false,
             'headless.redirectMiddlewares' => false,
+            'headless.simplifiedLinkTarget' => false,
             'headless.workspaces' => false,
             'unifiedPageTranslationHandling' => true,
         ],

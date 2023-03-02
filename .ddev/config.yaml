@@ -7,23 +7,22 @@ router_http_port: "80"
 router_https_port: "443"
 xdebug_enabled: false
 additional_hostnames:
-  - api.pwa-demo
+    - api.pwa-demo
 additional_fqdns: []
 database:
-  type: mariadb
-  version: "10.2"
+    type: mariadb
+    version: "10.3"
 nfs_mount_enabled: false
 mutagen_enabled: false
 hooks:
-  post-start:
-    - exec: /var/www/html/.ddev/import-if-empty.sh
-    - exec: composer install
-    - exec: bin/typo3cms database:updateschema
-    - exec-host: ddev setup-pwa-front first-time
-    - exec-host: ddev pwa-front rebuild
-    - exec-host: ddev setup-pwa-front post-start-info
+    post-start:
+        - exec: /var/www/html/.ddev/import-if-empty.sh
+        - exec: composer install
+        - exec-host: ddev setup-pwa-front first-time
+        - exec-host: ddev pwa-front rebuild
+        - exec-host: ddev setup-pwa-front post-start-info
 use_dns_when_possible: true
-composer_version: ""
+composer_version: "2"
 web_environment:
     - TYPO3_CONTEXT=Development
 nodejs_version: "14"
