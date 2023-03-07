@@ -33,6 +33,7 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+   '@nuxtjs/pwa',
    'nuxt-typo3',
    'nuxt-typo3-tailwind'
   ],
@@ -43,7 +44,7 @@ export default {
       locales: ['pl', 'en', 'de']
     },
     api: {
-      baseURL: 'https://api.pwa-demo.ddev.site'
+      baseURL: 'https://pwa-demo.ddev.site/api'
     },
   },
 
