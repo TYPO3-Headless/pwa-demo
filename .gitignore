@@ -17,6 +17,3 @@
 /.env
 /.idea
 Tests/Acceptance/Support/_generated/
-front/*
-!front/recommended.json
-!front/kill_node_server.sh
