@@ -1,7 +1,7 @@
 <?php
 return [
     'BE' => [
-        'debug' => false,
+        'debug' => true,
         'explicitADmode' => 'explicitAllow',
         'installToolPassword' => '$2a$12$eCPenIJ4AUYrkXke5DpuVuNX5gKxGSzBu2ExOdYrDwTXtOT2kUiK.',
         'passwordHashing' => [
@@ -52,7 +52,7 @@ return [
         ],
     ],
     'FE' => [
-        'debug' => false,
+        'debug' => true,
         'passwordHashing' => [
             'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\BcryptPasswordHash',
             'options' => [],
@@ -79,7 +79,7 @@ return [
         'devIPmask' => '',
         'displayErrors' => 0,
         'encryptionKey' => '517d47fd2681627245de9c4a4a726ac2e833c8bca7c5c0ad543c12e9f2ddbd8803a83044b6a4f247b26ceddf03be451d',
-        'exceptionalErrors' => 4096,
+        'exceptionalErrors' => 12290,
         'features' => [
             'headless.elementBodyResponse' => false,
             'headless.frontendUrls' => false,
