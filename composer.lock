@@ -902,12 +902,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-Headless/headless.git",
-                "reference": "b433df0cab3def48cd0d1eb6d8d42a5ac13dbe7f"
+                "reference": "de21d01cb5b08e7c16929ab09367afefa5d0e5e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-Headless/headless/zipball/b433df0cab3def48cd0d1eb6d8d42a5ac13dbe7f",
-                "reference": "b433df0cab3def48cd0d1eb6d8d42a5ac13dbe7f",
+                "url": "https://api.github.com/repos/TYPO3-Headless/headless/zipball/de21d01cb5b08e7c16929ab09367afefa5d0e5e0",
+                "reference": "de21d01cb5b08e7c16929ab09367afefa5d0e5e0",
                 "shasum": ""
             },
             "require": {
@@ -926,10 +926,11 @@
                 "phpstan/phpstan": "^1.9",
                 "phpunit/phpcov": "^8.2",
                 "saschaegerer/phpstan-typo3": "^1.1",
+                "sbuerk/typo3-cmscomposerinstallers-testingframework-bridge": "^0.1.2",
                 "seld/jsonlint": "^1.8",
                 "symfony/yaml": "^6.1",
                 "typo3/cms-form": "12.*@dev",
-                "typo3/testing-framework": "dev-main"
+                "typo3/testing-framework": "^7.0@dev"
             },
             "type": "typo3-cms-extension",
             "extra": {
@@ -974,7 +975,7 @@
                 "issues": "https://github.com/TYPO3-Headless/headless/issues",
                 "source": "https://github.com/TYPO3-Headless/headless/tree/4.x"
             },
-            "time": "2023-02-23T14:38:02+00:00"
+            "time": "2023-03-07T18:04:05+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
