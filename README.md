@@ -75,3 +75,10 @@ To play with sources of [nuxt-typo3](https://github.com/TYPO3-Initiatives/nuxt-t
     yarn dev
     ```
 6. Make some changes in `nuxt-typo3` directory - your front app should be triggered and rebuilded with new changes in `nuxt-typo3` sources.
+
+## How to reimport database?
+From time to time we update database in `pwa-demo` project. If database got updated, please type
+```
+ddev import-db --src ./data/db.sql.gz
+```
+in your project root.
