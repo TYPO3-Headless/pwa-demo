@@ -47,6 +47,10 @@ export default {
     },
   },
 
+  typo3tailwind: {
+    layouts: false
+  },
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   }
