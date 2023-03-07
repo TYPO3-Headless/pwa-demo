@@ -3,3 +3,4 @@
 @import 'EXT:headless/Configuration/TypoScript/setup.typoscript'
 
 @import 'EXT:site_package/Configuration/TypoScript/ContentElement/*.typoscript'
+@import 'EXT:site_package/Configuration/TypoScript/Configuration/*.typoscript'
