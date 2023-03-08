@@ -1,6 +1,7 @@
-base: api.pwa-demo.ddev.site
+base: 'https://api.pwa-demo.ddev.site'
 baseVariants: {  }
 errorHandling: {  }
+frontendBase:  'https://pwa-demo.ddev.site'
 headless: true
 languages:
   -

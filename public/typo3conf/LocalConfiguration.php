@@ -82,7 +82,7 @@ return [
         'exceptionalErrors' => 12290,
         'features' => [
             'headless.elementBodyResponse' => false,
-            'headless.frontendUrls' => false,
+            'headless.frontendUrls' => true,
             'headless.simplifiedLinkTarget' => false,
             'headless.redirectMiddlewares' => false,
             'headless.workspaces' => false,
