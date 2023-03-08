@@ -902,18 +902,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-Headless/headless.git",
-                "reference": "de21d01cb5b08e7c16929ab09367afefa5d0e5e0"
+                "reference": "db28985f8915771d9d5b55b9221b0808baad38d0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-Headless/headless/zipball/de21d01cb5b08e7c16929ab09367afefa5d0e5e0",
-                "reference": "de21d01cb5b08e7c16929ab09367afefa5d0e5e0",
+                "url": "https://api.github.com/repos/TYPO3-Headless/headless/zipball/db28985f8915771d9d5b55b9221b0808baad38d0",
+                "reference": "db28985f8915771d9d5b55b9221b0808baad38d0",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
-                "typo3/cms-core": "^12.2",
-                "typo3/cms-install": "^12.2"
+                "typo3/cms-core": "^12.1",
+                "typo3/cms-install": "^12.1"
             },
             "require-dev": {
                 "ergebnis/composer-normalize": "^2.15.0",
@@ -975,7 +975,7 @@
                 "issues": "https://github.com/TYPO3-Headless/headless/issues",
                 "source": "https://github.com/TYPO3-Headless/headless/tree/4.x"
             },
-            "time": "2023-03-07T18:04:05+00:00"
+            "time": "2023-03-09T08:50:28+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
