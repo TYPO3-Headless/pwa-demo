@@ -35,5 +35,14 @@ tt_content.image_with_description {
                 }
             }
         }
+        appearance {
+            fields {
+                layout {
+                    1 {
+                        value = hero
+                    }
+                }
+            }
+        }
     }
 }

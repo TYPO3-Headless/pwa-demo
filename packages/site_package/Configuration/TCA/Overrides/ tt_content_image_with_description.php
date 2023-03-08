@@ -34,6 +34,20 @@ call_user_func(
                         'enableRichtext' => true,
                     ],
                 ],
+                'layout' => [
+                    'config' => [
+                        'items' => [
+                            [
+                                'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.default_value',
+                                '0',
+                            ],
+                            [
+                                'Hero',
+                                '1',
+                            ]
+                        ]
+                    ]
+                ],
             ],
         ];
     },
