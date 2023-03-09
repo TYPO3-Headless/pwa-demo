@@ -25,7 +25,7 @@ use_dns_when_possible: true
 composer_version: ""
 web_environment:
     - TYPO3_CONTEXT=Development
-nodejs_version: "16"
+nodejs_version: "14"
 
 # Key features of ddev's config.yaml:
 
