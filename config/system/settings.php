@@ -145,6 +145,7 @@ return [
             'headless.redirectMiddlewares' => false,
             'headless.simplifiedLinkTarget' => false,
             'headless.workspaces' => false,
+            'security.usePasswordPolicyForFrontendUsers' => true,
             'unifiedPageTranslationHandling' => true,
         ],
         'sitename' => 'PWA Demo',
