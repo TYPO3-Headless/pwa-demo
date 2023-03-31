@@ -1,10 +1,10 @@
 base: 'https://api.pwa-demo.ddev.site'
-baseVariants: {  }
-errorHandling: {  }
+baseVariants: []
+errorHandling: []
 headless: true
 languages:
   -
-    languageId: '0'
+    languageId: 0
     title: English
     navigationTitle: English
     base: /
@@ -16,7 +16,7 @@ languages:
     flag: us
     enabled: true
   -
-    languageId: '1'
+    languageId: 1
     title: Polish
     navigationTitle: Polish
     base: /pl/
@@ -30,7 +30,7 @@ languages:
     fallbacks: '0'
     enabled: true
   -
-    languageId: '2'
+    languageId: 2
     title: German
     navigationTitle: Deutsch
     base: /de/
@@ -44,4 +44,4 @@ languages:
     fallbacks: '0'
     enabled: true
 rootPageId: 1
-routes: {  }
+routes: []
