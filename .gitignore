@@ -1,5 +1,6 @@
 /.ddev/docker-compose.yaml
 /bin
+/public/_assets/*
 /public/fileadmin/_processed_/*
 /public/fileadmin/form_definitions/*
 /public/fileadmin/user_upload/*
