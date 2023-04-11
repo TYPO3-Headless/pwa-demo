@@ -22,7 +22,7 @@
     ],
     "require": {
         "php": "^8.1",
-        "friendsoftypo3/headless": "4.x-dev",
+        "friendsoftypo3/headless": "^4",
         "helhum/typo3-console": "dev-main",
         "mask/mask": "^8.0",
         "pwademo/site-package": "^1",
