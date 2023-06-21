@@ -142,7 +142,7 @@ return [
         'features' => [
             'headless.elementBodyResponse' => false,
             'headless.frontendUrls' => false,
-            'headless.redirectMiddlewares' => false,
+            'headless.redirectMiddlewares' => true,
             'headless.simplifiedLinkTarget' => false,
             'headless.workspaces' => false,
             'security.usePasswordPolicyForFrontendUsers' => true,
