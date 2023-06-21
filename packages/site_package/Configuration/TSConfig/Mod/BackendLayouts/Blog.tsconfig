@@ -1,0 +1,35 @@
+mod.web_layout.BackendLayouts {
+  blog {
+    title = Blog
+    icon = EXT:example_extension/Resources/Public/Images/BackendLayouts/default.gif
+    config {
+      backend_layout {
+        colCount = 2
+        rowCount = 2
+        rows {
+          1 {
+            columns {
+              1 {
+                name = 0
+                colPos = 0
+              }
+              2 {
+                name = 1
+                colPos = 1
+              }
+            }
+          }
+          2 {
+            columns {
+              1 {
+                name = 2
+                colspan = 2
+                colPos = 2
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

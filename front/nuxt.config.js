@@ -46,6 +46,9 @@ export default {
       baseURL: 'https://api.pwa-demo.ddev.site'
     },
   },
+  typo3tailwind: {
+    layouts: false
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
