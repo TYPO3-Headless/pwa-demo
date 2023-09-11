@@ -1,4 +1,5 @@
 @import 'EXT:seo/Configuration/TypoScript/XmlSitemap/setup.typoscript'
+@import 'EXT:form/Configuration/TypoScript/setup.typoscript'
 @import 'EXT:mask/Configuration/TypoScript/setup.typoscript'
 @import 'EXT:headless/Configuration/TypoScript/setup.typoscript'
 

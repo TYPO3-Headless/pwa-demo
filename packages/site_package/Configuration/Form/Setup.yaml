@@ -1,0 +1,13 @@
+TYPO3:
+  CMS:
+    Form:
+      prototypes:
+        standard:
+          finishersDefinition:
+            JsonRedirect:
+              implementationClassName: 'FriendsOfTYPO3\Headless\Form\Finisher\JsonRedirectFinisher'
+      persistenceManager:
+        allowSaveToExtensionPaths: true
+        allowedExtensionPaths:
+          10: EXT:site_package/Configuration/Form/FormDefinition/
+

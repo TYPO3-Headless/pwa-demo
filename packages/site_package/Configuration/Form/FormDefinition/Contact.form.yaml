@@ -1,0 +1,149 @@
+i18n:
+  identifier: i18n
+  properties:
+    sendingLabel: Sending...
+    serverError: server error
+    validationErrors: validation errors
+    requiredFields: required fields
+renderingOptions:
+  formDecorator: FriendsOfTYPO3\Headless\Form\Decorator\FormDefinitionDecorator
+  submitButtonLabel: Submit
+type: Form
+identifier: ContactForm
+label: ContactForm
+prototypeName: standard
+finishers:
+  - identifier: JsonRedirect
+    options:
+      pageUid: 33
+renderables:
+  - renderingOptions:
+      previousButtonLabel: 'Previous step'
+      nextButtonLabel: 'Next step'
+    type: Page
+    identifier: page-1
+    label: Step
+    renderables:
+#      - properties:
+#          options:
+#            Mr: Mr
+#            Mrs: Mrs
+#          elementDescription: ''
+#          fluidAdditionalAttributes:
+#            required: required
+#        type: RadioButton
+#        identifier: salutation
+#        label: Salutation
+#        validators:
+#          - identifier: NotEmpty
+#            errorMessage: 1221560910
+      - defaultValue: ''
+        type: Text
+        identifier: firstName
+        label: 'First name'
+        validators:
+          - identifier: NotEmpty
+            errorMessage: 1221560910
+          - options:
+              minimum: 3
+              maximum: 50
+            identifier: StringLength
+            errorMessage: 1428504122
+        properties:
+          fluidAdditionalAttributes:
+            required: required
+            minlength: 3
+            maxlength: 50
+          validationErrorMessages:
+            - code: 1221565130
+              message: error.only_letters
+      - defaultValue: 'test name default'
+        type: Text
+        identifier: lastName
+        label: 'Last name'
+        validators:
+          - options:
+              minimum: 0
+              maximum: 100
+            identifier: StringLength
+            errorMessage: 1428504122
+        properties:
+          fluidAdditionalAttributes:
+            required: required
+            minlength: 3
+            maxlength: 100
+          validationErrorMessages:
+            - code: 1221565130
+              message: error.lastname
+#      - defaultValue: ''
+#        type: Text
+#        identifier: regex
+#        label: Test regex only numbers
+#        validators:
+#          - options:
+#              minimum: 0
+#              maximum: 50
+#            identifier: StringLength
+#            errorMessage: 1428504122
+#          - options:
+#              regularExpression: '/^[0-9]+$/'
+#            identifier: RegularExpression
+#            errorMessage: 1221565130
+#        properties:
+#          fluidAdditionalAttributes:
+#            minlength: 0
+#            maxlength: 50
+#          validationErrorMessages:
+#            - code: 1221565130
+#              message: Test error
+      - defaultValue: ''
+        type: Text
+        identifier: email
+        label: Email
+        properties:
+          elementDescription: ''
+          fluidAdditionalAttributes:
+            required: required
+            minlength: 3
+            maxlength: 250
+        validators:
+          - identifier: NotEmpty
+            errorMessage: 1221560910
+          - options:
+              minimum: 3
+              maximum: 250
+            identifier: StringLength
+            errorMessage: 1428504122
+          - identifier: EmailAddress
+            errorMessage: 1221559976
+      - defaultValue: ''
+        type: Textarea
+        identifier: message
+        label: Message
+        validators:
+          - identifier: NotEmpty
+            errorMessage: 1221560910
+          - options:
+              minimum: 3
+              maximum: 3000
+            identifier: StringLength
+            errorMessage: 1428504122
+        properties:
+          fluidAdditionalAttributes:
+            required: required
+            minlength: 3
+            maxlength: 3000
+          validationErrorMessages:
+            - code: 1221565130
+              message: error.message
+      - type: Checkbox
+        identifier: consent
+        label: I read and accept the privacy policy.
+        validators:
+          - identifier: NotEmpty
+            errorMessage: 1221560910
+        properties:
+          agreementHeader: ''
+          agreementText: ''
+          fluidAdditionalAttributes:
+            required: required

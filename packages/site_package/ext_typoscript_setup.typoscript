@@ -1,0 +1,15 @@
+module.tx_form {
+  settings {
+    yamlConfigurations {
+      100 = EXT:site_package/Configuration/Form/Setup.yaml
+    }
+  }
+}
+plugin.tx_form {
+  settings {
+    yamlConfigurations {
+      100 = EXT:site_package/Configuration/Form/Setup.yaml
+      110 = EXT:site_package/Configuration/Form/FormDefinition/Contact.form.yaml
+    }
+  }
+}
