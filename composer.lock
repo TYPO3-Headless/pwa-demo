@@ -8099,16 +8099,16 @@
         },
         {
             "name": "typo3/html-sanitizer",
-            "version": "v2.1.1",
+            "version": "v2.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/html-sanitizer.git",
-                "reference": "f8b9c466a08fe4b7bd32b4b8dbde5cf7fbfa9956"
+                "reference": "a35f220b2336e3f040f91d3de23d19964833643f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/html-sanitizer/zipball/f8b9c466a08fe4b7bd32b4b8dbde5cf7fbfa9956",
-                "reference": "f8b9c466a08fe4b7bd32b4b8dbde5cf7fbfa9956",
+                "url": "https://api.github.com/repos/TYPO3/html-sanitizer/zipball/a35f220b2336e3f040f91d3de23d19964833643f",
+                "reference": "a35f220b2336e3f040f91d3de23d19964833643f",
                 "shasum": ""
             },
             "require": {
@@ -8144,9 +8144,9 @@
             "description": "HTML sanitizer aiming to provide XSS-safe markup based on explicitly allowed tags, attributes and values.",
             "support": {
                 "issues": "https://github.com/TYPO3/html-sanitizer/issues",
-                "source": "https://github.com/TYPO3/html-sanitizer/tree/v2.1.1"
+                "source": "https://github.com/TYPO3/html-sanitizer/tree/v2.1.3"
             },
-            "time": "2022-12-13T08:07:15+00:00"
+            "time": "2023-07-25T08:47:32+00:00"
         },
         {
             "name": "typo3/minimal",
