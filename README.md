@@ -9,6 +9,8 @@ It's based on
 - https://github.com/TYPO3-Initiatives/nuxt-typo3
 - https://github.com/TYPO3-Initiatives/create-nuxt-typo3
 
+## How to start with TYPO3 Headless video tutorial
+[![video still](https://i.ytimg.com/vi/7MOwugAyHkY/hq720.jpg)](https://www.youtube.com/watch?v=7MOwugAyHkY)
 
 ## Requirements
 All you need is [ddev](https://ddev.readthedocs.io/en/stable/) in version at least v1.19.3.
