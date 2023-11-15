@@ -1,8 +1,8 @@
 <?php
 
 $EM_CONF[$_EXTKEY] = [
-    'title' => 'SitePackage',
-    'description' => 'Provides site package for page',
+    'title' => 'TYPO3 Headless And PWA Demo Site Package',
+    'description' => 'Provides site package for TYPO3 Headless And PWA Demo',
     'state' => 'stable',
     'author' => 'Łukasz Uznański',
     'author_email' => 'extensions@macopedia.pl',
@@ -10,7 +10,7 @@ $EM_CONF[$_EXTKEY] = [
     'version' => '1.0.0',
     'constraints' => [
         'depends' => [
-            'typo3' => '11.5.0-11.5.99',
+            'typo3' => '12.4.0-12.4.99',
         ],
         'conflicts' => [],
         'suggests' => [],

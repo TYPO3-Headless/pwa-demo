@@ -3,13 +3,17 @@
   "type": "typo3-cms-extension",
   "version": "1.0.0",
   "minimum-stability": "stable",
-  "description": "Site package",
+  "description": "TYPO3 Headless And PWA Demo Site Package",
   "require": {
-    "typo3/cms-core": "^12.3"
+    "typo3/cms-core": "^12.4"
   },
   "authors": [
     {
       "name": "Łukasz Uznański",
+      "role": "Developer"
+    },
+    {
+      "name": "Marcin Sągol",
       "role": "Developer"
     },
     {
