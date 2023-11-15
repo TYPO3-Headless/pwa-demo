@@ -1,0 +1,40 @@
+{
+  "name": "typo3-cypress",
+  "version": "1.0.0",
+  "description": "cypress tests",
+  "main": "index.js",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "cypress:open": "npx cypress open",
+    "prettier": "npx prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ncatestify/cypressio-base.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ncatestify/cypressio-base/issues"
+  },
+  "homepage": "https://github.com/ncatestify/cypressio-base#readme",
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "5.40.0",
+    "@typescript-eslint/parser": "5.40.0",
+    "eslint": "8.25.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-cypress": "2.12.1",
+    "eslint-plugin-jsonc": "2.4.0",
+    "eslint-plugin-prettier": "4.2.1",
+    "prettier": "2.7.1",
+    "typescript": "4.8.4"
+  },
+  "devDependencies": {
+    "cypress": "^12.5.1",
+    "cypress-axe": "^1.4.0",
+    "cypress-ncatestify-plugin": "^2.0.26"
+  }
+}

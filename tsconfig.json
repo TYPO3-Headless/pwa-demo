@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/support/*": ["./cypress/support/*"],
+      "@/pages/*": ["./cypress/pages/*"]
+    },
+    "module": "amd",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "target": "ES2019",
+    "lib": ["esnext", "dom"],
+    "types": ["cypress", "node"],
+    "allowSyntheticDefaultImports": true,
+    "typeRoots": ["node_modules/@types"]
+  },
+  "include": ["**/*.ts"]
+}
