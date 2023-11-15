@@ -62,6 +62,7 @@ return [
             'layouts' => 'EXT:site_package/Resources/Private/Mask/Frontend/Layouts',
             'layouts_backend' => 'EXT:site_package/Resources/Private/Mask/Backend/Layouts',
             'loader_identifier' => 'json',
+            'override_shared_fields' => '0',
             'partials' => 'EXT:site_package/Resources/Private/Mask/Frontend/Partials',
             'partials_backend' => 'EXT:site_package/Resources/Private/Mask/Backend/Partials',
             'preview' => 'EXT:site_package/Resources/Public/Mask/',

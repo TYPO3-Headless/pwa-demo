@@ -12,18 +12,22 @@
         }
       }
     ],
-    "name": "friendsoftypo/pwademo",
+    "name": "typo3headless/pwademo",
     "license": "GPL-2.0-or-later",
     "authors": [
         {
             "name": "Łukasz Uznański",
             "email": "extensions@macopedia.pl"
-        }
+        },
+      {
+        "name": "Marcin Sągol",
+        "email": "extensions@macopedia.pl"
+      }
     ],
     "require": {
         "php": "^8.1",
         "friendsoftypo3/headless": "^4",
-        "helhum/typo3-console": "dev-main",
+        "helhum/typo3-console": "^8.0",
         "mask/mask": "^8.0",
         "pwademo/site-package": "^1",
         "typo3/cms-adminpanel": "^12.4",
