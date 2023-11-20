@@ -142,9 +142,7 @@ return [
         'exceptionalErrors' => 12290,
         'features' => [
             'headless.elementBodyResponse' => false,
-            'headless.frontendUrls' => false,
-            'headless.redirectMiddlewares' => false,
-            'headless.simplifiedLinkTarget' => false,
+            'headless.redirectMiddlewares' => true,
             'headless.workspaces' => false,
             'security.usePasswordPolicyForFrontendUsers' => true,
             'unifiedPageTranslationHandling' => true,
