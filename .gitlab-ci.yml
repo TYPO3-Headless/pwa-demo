@@ -1,0 +1,67 @@
+---
+stages:
+  - write_configuration
+  - build
+  - deploy
+
+variables:
+  CONTAINER_PRODUCTION_IMAGE: $CI_REGISTRY_IMAGE:pwa-container
+
+.default:
+  only:
+    - master
+  tags:
+    - i6 integracja6
+
+write_configuration:
+  extends: .default
+  stage: write_configuration
+  variables:
+    GIT_STRATEGY: "fetch"
+  environment:
+    name: master
+  script:
+    - if [[ ! -e ./config/.gitlab ]]; then mkdir -p ./config/.gitlab; fi
+    - |
+      cat > ./config/.gitlab/env.php << EOF
+      <?php
+      return [
+        'env' => '$PROJECT_ENV',
+        'DB' => [
+          'Connections' => [
+            'Default' => [
+              'dbname' => '$PROJECT_ENV_DB_NAME',
+              'host' => '$PROJECT_ENV_DB_HOST',
+              'password' => '$PROJECT_ENV_DB_PASSWORD',
+              'port' => '$PROJECT_ENV_DB_PORT',
+              'user' => '$PROJECT_ENV_DB_USER',
+            ],
+          ],
+        ],
+      ];
+      EOF
+
+build_container:
+  extends: .default
+  stage: build
+  dependencies:
+    - write_configuration
+  variables:
+    DOCKER_CONFIG: ".docker-config/"
+    GIT_STRATEGY: "none"
+  script:
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+    - docker pull $CONTAINER_PRODUCTION_IMAGE || true
+    - docker build --cache-from $CONTAINER_PRODUCTION_IMAGE --tag $CONTAINER_PRODUCTION_IMAGE .
+    - docker push $CONTAINER_PRODUCTION_IMAGE
+
+deploy_container:
+  extends: .default
+  stage: deploy
+  variables:
+    GIT_STRATEGY: "none"
+  script:
+    - docker stop pwa-typo3 || true
+    - docker rm pwa-typo3 || true
+    - docker run -d --name pwa-typo3 -p 8974:80 -v /var/builds/pwa/latest/shared/fileadmin:/code/public/fileadmin -v /var/builds/pwa/latest/shared/typo3temp:/code/public/typo3temp $CONTAINER_PRODUCTION_IMAGE
+    - docker exec -u www-data pwa-typo3 /bin/bash -c 'composer install -d /code --prefer-dist --no-progress --optimize-autoloader'
