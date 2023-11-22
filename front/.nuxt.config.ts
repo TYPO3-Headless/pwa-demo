@@ -6,7 +6,7 @@ export default defineNuxtConfig({
   ],
   typo3: {
     api: {
-      baseUrl: process.env.API_BASE || 'https://api.t3pwa.com'
+      baseUrl: process.env.API_BASE
     }
   },
   vite: {

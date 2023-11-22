@@ -13,19 +13,11 @@ normal=$(tput sgr0)
 case $1 in
     first-time)
   echo -e "${bold}Frontend setup:"
-  if [[ ! -v NPM_TOKEN ]]; then
-    echo -e "${bold}Provide NPM TOKEN in .ddev/.env \n"
-    exit 1;
-  fi
   if [ ! -d "front/node_modules" ]; then
       echo -e "${bold}Creating frontend app: \n"
       npx --yes nuxi init --packageManager yarn --force --install false --gitInit false -t gh:TYPO3-Headless/nuxt-typo3-starter front
       cd front
       mv .nuxt.config.ts nuxt.config.ts
-      mv .env.example .env
-      echo "@t3headless:registry=https://git.macopedia.pl/api/v4/packages/npm/" >> .npmrc
-      echo "//git.macopedia.pl/api/v4/packages/npm/:_authToken=${NPM_TOKEN}" >> .npmrc
-      echo "//git.macopedia.pl/api/v4/projects/811/packages/npm/:_authToken=${NPM_TOKEN}" >> .npmrc
       yarn
     else
       echo -e "${bold}Frontend app already exists."
