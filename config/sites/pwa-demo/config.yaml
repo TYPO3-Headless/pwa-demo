@@ -1,5 +1,10 @@
 base: 'https://api.pwa-demo.ddev.site'
-baseVariants: []
+baseVariants:
+  - base: 'https://api.t3pwa.com'
+    condition: 'applicationContext == "Production/Production"'
+    frontendBase: 'https://demo.t3pwa.com'
+    frontendApiProxy: 'https://demo.t3pwa.com/headless'
+    frontendFileApi: 'https://demo.t3pwa.com/headless/fileadmin'
 errorHandling:
   -
     errorCode: 404
