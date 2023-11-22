@@ -7,60 +7,62 @@ root = true
 [*]
 charset = utf-8
 end_of_line = lf
+indent_style = space
+indent_size = 4
 insert_final_newline = true
 trim_trailing_whitespace = true
 
-# CSS-Files
-[*.css]
-indent_style = space
-indent_size = 4
+# TS/JS-Files
+[*.{ts,js,mjs}]
+indent_size = 2
 
-# HTML-Files
-[*.html]
-indent_style = space
-indent_size = 4
-
-# TMPL-Files
-[*.tmpl]
-indent_style = space
-indent_size = 4
-
-# LESS-Files
-[*.less]
-indent_style = space
-indent_size = 4
-
-# JS-Files
-[*.js]
-indent_style = space
-indent_size = 4
-
-# PHP-Files
-[*.php]
-indent_style = space
-indent_size = 4
-
-# MD-Files
-[*.md]
-indent_style = space
-indent_size = 4
+# JSON-Files
+[*.json]
+indent_style = tab
 
 # ReST-Files
-[*.rst]
-indent_style = space
-indent_size = 3
+[*.{rst,rst.txt}]
+indent_size = 4
+max_line_length = 80
+
+# Markdown-Files
+[*.md]
+max_line_length = 80
+
+# YAML-Files
+[*.{yaml,yml}]
+indent_size = 2
+
+# NEON-Files
+[*.neon]
+indent_size = 2
+indent_style = tab
+
+# stylelint
+[.stylelintrc]
+indent_size = 2
+
+# package.json
+[package.json]
+indent_size = 2
 
 # TypoScript
-[*.typoscript]
-indent_style = space
-indent_size = 4
-
-# YML-Files
-[{*.yml,*.yaml}]
-indent_style = space
+[*.{typoscript,tsconfig}]
 indent_size = 2
 
-# package.json or composer.json
-[{package.json,composer.json}]
-indent_style = space
+# XLF-Files
+[*.xlf]
+indent_style = tab
+
+# SQL-Files
+[*.sql]
+indent_style = tab
 indent_size = 2
+
+[*.conf]
+indent_style = tab
+tab_width = 4
+
+# .htaccess
+[{_.htaccess,.htaccess}]
+indent_style = tab
