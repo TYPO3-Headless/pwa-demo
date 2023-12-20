@@ -4,9 +4,10 @@ export default defineNuxtConfig({
   modules: [
     '@t3headless/nuxt-typo3'
   ],
+  extends: '@t3headless/nuxt-typo3-ui',
   typo3: {
     api: {
-      baseUrl: process.env.API_BASE
+      baseUrl: 'https://api.pwa-demo.ddev.site'
     }
   },
   vite: {

@@ -19,5 +19,6 @@
 /.idea
 Tests/Acceptance/Support/_generated/
 front/*
-!front/.nuxt.config.ts
+!front/_nuxt.config.ts
+!front/_app.vue
 !front/kill_node_server.sh

@@ -17,7 +17,9 @@ case $1 in
       echo -e "${bold}Creating frontend app: \n"
       npx --yes nuxi init --packageManager yarn --force --install false --gitInit false -t gh:TYPO3-Headless/nuxt-typo3-starter front
       cd front
-      mv .nuxt.config.ts nuxt.config.ts
+      yarn add @t3headless/nuxt-typo3-ui
+      mv _nuxt.config.ts nuxt.config.ts
+      mv _app.vue app.vue
       yarn
     else
       echo -e "${bold}Frontend app already exists."

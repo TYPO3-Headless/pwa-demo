@@ -8,7 +8,7 @@ The solution is built upon several key TYPO3 initiatives:
 - [TYPO3 Headless](https://github.com/TYPO3-Headless/headless)
 - [TYPO3 Headless News](https://github.com/TYPO3-Headless/headless_news)
 - [Nuxt TYPO3](https://github.com/TYPO3-Headless/nuxt-typo3)
-- [Nuxt TYPO3 Create App](https://github.com/TYPO3-Headless/create-nuxt-typo3)
+- [Nuxt TYPO3 Starter](https://github.com/TYPO3-Headless/nuxt-typo3-starter)
 
 ## How to start with TYPO3 Headless video tutorial
 [![video still](https://i.ytimg.com/vi/7MOwugAyHkY/hq720.jpg)](https://www.youtube.com/watch?v=7MOwugAyHkY)
@@ -51,51 +51,11 @@ Active development of this extension is a part of the TYPO3 PWA initiative. For 
 
 ## Front-end exploration
 
-To initiate Nuxt.js in development mode, execute:
+To initiate Nuxt in development mode, execute:
 
 ```
 ddev pwa-front dev
 ```
-
-**NOTE:** On macOS, the Webpack process operates within DDEV, which might result in slower performance compared to local development.
-Nevertheless, this environment is suitable for experimenting and implementing simple modifications.
-
-## nuxt-typo3 development with TYPO3 PWA Demo API
-
-This DDEV repository provides a working application in production mode.\
-To experiment with the sources of the [nuxt-typo3](https://github.com/TYPO3-Initiatives/nuxt-typo3) plugin, please follow these steps:
-
-1. Clone [nuxt-typo3](https://github.com/TYPO3-Initiatives/nuxt-typo3) inside this repository:
-
-   ```bash
-   git clone https://github.com/TYPO3-Initiatives/nuxt-typo3.git
-   ```
-
-2. Navigate to the `nuxt-typo3` directory and install all necessary packages:
-
-    ```bash
-    cd nuxt-typo3 && yarn install
-    ```
-
-3. Run `ddev ssh`, move to the `nuxt-typo3` directory and execute `yarn link` to create a symlink for the sources of nuxt-typo3 ([Yarn Link Documentation](https://classic.yarnpkg.com/en/docs/cli/link/)):
-
-    ```bash
-    yarn link
-    ```
-
-4. Go to the `front` directory and link `nuxt-typo3`:
-
-    ```bash
-    yarn link "nuxt-typo3"
-    ```
-
-5. Execute `yarn dev` within the `front` directory:
-
-    ```bash
-    yarn dev
-    ```
-
-6. Make changes in the `nuxt-typo3` directory. Your front-end app should automatically rebuild with the new changes in the `nuxt-typo3` sources.
 
 ## How to reimport database?
 
