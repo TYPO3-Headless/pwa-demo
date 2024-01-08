@@ -40,6 +40,19 @@ write_configuration:
         ],
       ];
       EOF
+    - |
+      cat >> ./config/system/additional.php << 'EOF'
+      $envConfiguration = [];
+      if (file_exists('./config/.gitlab/env.php')) {
+          $envConfiguration = require './config/.gitlab/env.php';
+      }
+      if (!empty($envConfiguration)) {
+          $GLOBALS['TYPO3_CONF_VARS'] = array_replace_recursive(
+              $GLOBALS['TYPO3_CONF_VARS'],
+              $envConfiguration
+          );
+      }
+      EOF
 
 build_container:
   extends: .default
