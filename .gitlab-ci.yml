@@ -38,6 +38,9 @@ write_configuration:
             ],
           ],
         ],
+        'MAIL' => [
+          'transport_sendmail_command' => '/usr/sbin/sendmail -t -i ',
+        ],
       ];
       EOF
     - |
