@@ -143,7 +143,7 @@ return [
         'encryptionKey' => '517d47fd2681627245de9c4a4a726ac2e833c8bca7c5c0ad543c12e9f2ddbd8803a83044b6a4f247b26ceddf03be451d',
         'exceptionalErrors' => 12290,
         'features' => [
-            'headless.elementBodyResponse' => false,
+            'headless.elementBodyResponse' => true,
             'headless.redirectMiddlewares' => true,
             'headless.workspaces' => false,
             'security.usePasswordPolicyForFrontendUsers' => true,
