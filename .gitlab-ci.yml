@@ -43,8 +43,8 @@ write_configuration:
     - |
       cat >> ./config/system/additional.php << 'EOF'
       $envConfiguration = [];
-      if (file_exists('./config/.gitlab/env.php')) {
-          $envConfiguration = require './config/.gitlab/env.php';
+      if (file_exists('/code/config/.gitlab/env.php')) {
+          $envConfiguration = require '/code/config/.gitlab/env.php';
       }
       if (!empty($envConfiguration)) {
           $GLOBALS['TYPO3_CONF_VARS'] = array_replace_recursive(
