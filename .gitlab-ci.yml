@@ -41,7 +41,7 @@ write_configuration:
       ];
       EOF
     - |
-      cat >> ./config/system/additional.php << EOF
+      cat >> ./config/system/additional.php << 'EOF'
       $envConfiguration = [];
       if (file_exists('./config/.gitlab/env.php')) {
           $envConfiguration = require './config/.gitlab/env.php';
