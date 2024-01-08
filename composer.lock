@@ -976,16 +976,16 @@
         },
         {
             "name": "friendsoftypo3/headless",
-            "version": "v4.2.2",
+            "version": "v4.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-Headless/headless.git",
-                "reference": "686dc4492d92b68e2a9dd20a181b7725f3d0ae6c"
+                "reference": "2a7a6942dc68517e1f099870d152a09f6a5fdc61"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-Headless/headless/zipball/686dc4492d92b68e2a9dd20a181b7725f3d0ae6c",
-                "reference": "686dc4492d92b68e2a9dd20a181b7725f3d0ae6c",
+                "url": "https://api.github.com/repos/TYPO3-Headless/headless/zipball/2a7a6942dc68517e1f099870d152a09f6a5fdc61",
+                "reference": "2a7a6942dc68517e1f099870d152a09f6a5fdc61",
                 "shasum": ""
             },
             "require": {
@@ -1054,9 +1054,9 @@
             ],
             "support": {
                 "issues": "https://github.com/TYPO3-Headless/headless/issues",
-                "source": "https://github.com/TYPO3-Headless/headless/tree/v4.2.2"
+                "source": "https://github.com/TYPO3-Headless/headless/tree/v4.2.3"
             },
-            "time": "2023-10-31T09:24:48+00:00"
+            "time": "2023-11-28T10:16:27+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -1496,16 +1496,16 @@
         },
         {
             "name": "helhum/typo3-console",
-            "version": "v8.0.3",
+            "version": "v8.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-Console/TYPO3-Console.git",
-                "reference": "b1e230a9176d3863adf58e37041170dab4e5ce90"
+                "reference": "65751edf3d6a096e5448c58684bc5652ea3ba919"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-Console/TYPO3-Console/zipball/b1e230a9176d3863adf58e37041170dab4e5ce90",
-                "reference": "b1e230a9176d3863adf58e37041170dab4e5ce90",
+                "url": "https://api.github.com/repos/TYPO3-Console/TYPO3-Console/zipball/65751edf3d6a096e5448c58684bc5652ea3ba919",
+                "reference": "65751edf3d6a096e5448c58684bc5652ea3ba919",
                 "shasum": ""
             },
             "require": {
@@ -1545,7 +1545,7 @@
             "type": "typo3-cms-extension",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "8.0.x-dev"
+                    "dev-main": "8.1.x-dev"
                 },
                 "typo3/cms": {
                     "Package": {
@@ -1601,7 +1601,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-05-31T08:11:22+00:00"
+            "time": "2023-11-29T15:16:44+00:00"
         },
         {
             "name": "lolli42/finediff",
@@ -4824,16 +4824,16 @@
         },
         {
             "name": "symfony/process",
-            "version": "v6.3.4",
+            "version": "v6.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "0b5c29118f2e980d455d2e34a5659f4579847c54"
+                "reference": "c4b1ef0bc80533d87a2e969806172f1c2a980241"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/0b5c29118f2e980d455d2e34a5659f4579847c54",
-                "reference": "0b5c29118f2e980d455d2e34a5659f4579847c54",
+                "url": "https://api.github.com/repos/symfony/process/zipball/c4b1ef0bc80533d87a2e969806172f1c2a980241",
+                "reference": "c4b1ef0bc80533d87a2e969806172f1c2a980241",
                 "shasum": ""
             },
             "require": {
@@ -4865,7 +4865,7 @@
             "description": "Executes commands in sub-processes",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/process/tree/v6.3.4"
+                "source": "https://github.com/symfony/process/tree/v6.4.2"
             },
             "funding": [
                 {
@@ -4881,7 +4881,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-08-07T10:39:22+00:00"
+            "time": "2023-12-22T16:42:54+00:00"
         },
         {
             "name": "symfony/property-access",
