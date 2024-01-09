@@ -1,0 +1,20 @@
+name: Push to remote repository on master branch update
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  push_changes:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.MACOPEDIA_TOKEN }}
+          fetch-depth: 0
+
+      - name: Push to remote repository
+        run: |
+          git remote add macopedia ${{ secrets.MACOPEDIA_REMOTE_REPO_URL }}
+          git push --set-upstream macopedia master
