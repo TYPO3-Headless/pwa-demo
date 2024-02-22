@@ -71,6 +71,14 @@ return [
             'maxLifetime' => '1440',
             'showSampleTasks' => '1',
         ],
+        'typo3_ai' => [
+            'api' => [
+                'chatgpt' => [
+                    'id' => 'org-zQvb9nxyFovTDVCgfnJaCVvS',
+                    'secret' => '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',
+                ],
+            ],
+        ],
     ],
     'FE' => [
         'debug' => true,
