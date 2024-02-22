@@ -25,7 +25,7 @@
 		}
 	],
 	"require": {
-		"php": "^8.1",
+		"php": "^8.3",
 		"friendsoftypo3/headless": "^4",
 		"helhum/typo3-console": "^8.0",
 		"pwademo/site-package": "^1",
@@ -65,7 +65,7 @@
 		"typo3/cms-viewpage": "^12.4",
 		"typo3/cms-workspaces": "^12.4",
 		"typo3/minimal": "^12.4",
-		"typo3headless/typo3-ai": "v2.0.0"
+		"typo3headless/typo3-ai": "v2.0.1"
 	},
 	"config": {
 		"sort-packages": true,
@@ -77,7 +77,7 @@
 			"php-http/discovery": true
 		},
 		"platform": {
-			"php": "8.1"
+			"php": "8.3"
 		}
 	},
 	"extra": {
