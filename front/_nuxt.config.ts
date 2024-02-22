@@ -7,7 +7,7 @@ export default defineNuxtConfig({
   extends: '@t3headless/nuxt-typo3-ui',
   typo3: {
     api: {
-      baseUrl: 'https://api.pwa-demo.ddev.site'
+      baseUrl: 'https://pwa-demo.ddev.site/headless'
     }
   },
   vite: {

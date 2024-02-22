@@ -15,6 +15,12 @@ call_user_func(
             'SitePackage :: Backend Layouts'
         );
 
+        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
+            $extensionKey,
+            'Configuration/TSConfig/Mod/All.tsconfig',
+            'SitePackage :: All'
+        );
+
     },
     'site_package'
 );
