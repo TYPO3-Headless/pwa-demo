@@ -145,7 +145,6 @@ return [
         'features' => [
             'headless.elementBodyResponse' => true,
             'headless.redirectMiddlewares' => true,
-            'headless.workspaces' => false,
             'security.usePasswordPolicyForFrontendUsers' => true,
             'unifiedPageTranslationHandling' => true,
         ],
