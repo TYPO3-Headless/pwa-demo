@@ -15,7 +15,9 @@ The solution is built upon several key TYPO3 initiatives:
 
 ## Requirements
 
-Ensure you have [DDEV](https://ddev.readthedocs.io/en/stable/) version `v1.19.3` or newer.
+Ensure you have [DDEV](https://ddev.readthedocs.io/en/stable/) version `v1.12.7` or newer.
+
+We recommend using Unix-like operating systems, such as Linux or macOS, due to several issues reported with WSL2 usage.
 
 ## Installation
 
