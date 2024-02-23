@@ -1,13 +1,13 @@
 mod {
     web_layout {
         BackendLayouts {
-            # BACKENDLAYOUT: DEFAULT
-            default {
-                title = LLL:EXT:site_package/Resources/Private/Language/Backend.xlf:backend_layout.default
+            # BACKENDLAYOUT: EXTENDED
+            extended {
+                title = LLL:EXT:site_package/Resources/Private/Language/Backend.xlf:backend_layout.extended
                 config {
                     backend_layout {
                         colCount = 12
-                        rowCount = 4
+                        rowCount = 5
                         rows {
                             1 {
                                 columns {
@@ -36,10 +36,29 @@ mod {
                                     }
                                 }
                             }
+                            4 {
+                                columns {
+                                    1 {
+                                        name = LLL:EXT:site_package/Resources/Private/Language/Backend.xlf:backend_layout.column.footer1
+                                        colPos = 10
+                                        colspan = 4
+                                    }
+                                    2 {
+                                        name = LLL:EXT:site_package/Resources/Private/Language/Backend.xlf:backend_layout.column.footer2
+                                        colPos = 11
+                                        colspan = 4
+                                    }
+                                    3 {
+                                        name = LLL:EXT:site_package/Resources/Private/Language/Backend.xlf:backend_layout.column.footer3
+                                        colPos = 12
+                                        colspan = 4
+                                    }
+                                }
+                            }
                         }
                     }
                 }
-                icon = EXT:site_package/Resources/Public/Icons/BackendLayouts/simple.svg
+                icon = EXT:site_package/Resources/Public/Icons/BackendLayouts/default.svg
             }
         }
     }
