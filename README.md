@@ -64,5 +64,5 @@ ddev pwa-front dev
 Occasionally, the database for the `pwa-demo` project is updated. If you want to update your database, execute the following command in your project root:
 
 ```bash
-ddev import-db --src ./data/db.sql.gz
+ddev import-db --file ./data/db.sql.gz
 ```
