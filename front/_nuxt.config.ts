@@ -6,6 +6,10 @@ export default defineNuxtConfig({
   ],
   extends: '@t3headless/nuxt-typo3-ui',
   typo3: {
+    i18n: {
+      default: 'en',
+      locales: ['en', 'pl', 'de']
+    },
     api: {
       baseUrl: 'https://pwa-demo.ddev.site/headless'
     }
