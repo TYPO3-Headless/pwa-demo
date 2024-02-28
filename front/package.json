@@ -1,0 +1,22 @@
+{
+  "name": "nuxt-typo3-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@t3headless/nuxt-typo3": "^2.0.0",
+    "nuxt": "^3.8.1",
+    "typescript": "^5.2.2",
+    "vue": "^3.3.8",
+    "vue-router": "^4.2.5"
+  },
+  "dependencies": {
+    "@t3headless/nuxt-typo3-ui": "^1.1.0"
+  }
+}
