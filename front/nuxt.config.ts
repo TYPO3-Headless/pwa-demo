@@ -14,6 +14,8 @@ export default defineNuxtConfig({
       baseUrl: 'https://pwa-demo.ddev.site/headless'
     }
   },
+  // this part is needed only for ddev development mode
+  // you don't need this if you work on localhost
   vite: {
     server: {
       hmr: {
