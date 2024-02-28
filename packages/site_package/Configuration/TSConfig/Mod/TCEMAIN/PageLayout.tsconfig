@@ -1,0 +1,5 @@
+TCEFORM.pages {
+  layout {
+    addItems.4 = Blank
+  }
+}

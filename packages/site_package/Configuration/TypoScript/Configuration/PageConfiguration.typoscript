@@ -2,3 +2,20 @@ page.10.fields.customField = TEXT
 page.10.fields.customField {
     value = customValue
 }
+
+page.10.fields.appearance.fields.layout >
+page.10.fields.appearance.fields.layout = CASE
+page.10.fields.appearance.fields.layout {
+    key.field = layout
+
+    default = TEXT
+    default {
+        field = layout
+        wrap = layout-|
+    }
+
+    4 = TEXT
+    4 {
+        value = blank
+    }
+}
