@@ -1,5 +1,9 @@
 <template>
     <NuxtLayout>
-        <NuxtPage />
+      <template v-if="initialData.user"> user logged state: {{ initialData.user }}</template>
+      <NuxtPage />
     </NuxtLayout>
-</template>
+  </template>
+  <script setup lang="ts">
+  const { initialData } = useT3Api()
+  </script>
