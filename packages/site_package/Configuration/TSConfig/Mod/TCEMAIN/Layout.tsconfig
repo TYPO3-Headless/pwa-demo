@@ -1,0 +1,5 @@
+TCEFORM.tt_content.layout.types.image_with_description {
+  addItems {
+    201 = Hero
+  }
+}

@@ -1,0 +1,12 @@
+tt_content.text {
+    fields {
+        content {
+            fields {
+                newField = TEXT
+                newField {
+                    value = test
+                }
+            }
+        }
+    }
+}

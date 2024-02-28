@@ -1,0 +1,14 @@
+mod.wizards.newContentElement.wizardItems.common {
+  elements {
+    image_with_description {
+      iconIdentifier =
+      title = Image with description
+      description = Image with description
+      tt_content_defValues {
+        CType = image_with_description
+      }
+    }
+  }
+
+  show := addToList(image_with_description)
+}

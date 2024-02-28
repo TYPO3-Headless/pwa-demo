@@ -1,0 +1,49 @@
+tt_content.image_with_description =< lib.contentElement
+tt_content.image_with_description {
+    fields {
+        appearance {
+           fields {
+               layout {
+                   201 = TEXT
+                   201 {
+                       value = hero
+                   }
+               }
+           }
+        }
+        content {
+            fields {
+                header = TEXT
+                header {
+                    field = header
+                }
+                headerLink = TEXT
+                headerLink {
+                    field = header_link
+                    typolink {
+                        parameter {
+                            field = header_link
+                        }
+                        returnLast = url
+                    }
+                }
+                bodytext = TEXT
+                bodytext {
+                    field = bodytext
+                    parseFunc =< lib.parseFunc_links
+                }
+                assets = TEXT
+                assets {
+                    dataProcessing {
+                        10 = FriendsOfTYPO3\Headless\DataProcessing\FilesProcessor
+                        10 {
+                            references.fieldName = assets
+                            as = assets
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
