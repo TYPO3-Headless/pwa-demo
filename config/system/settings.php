@@ -141,6 +141,7 @@ return [
             'headless.elementBodyResponse' => true,
             'headless.redirectMiddlewares' => true,
             'headless.storageProxy' => true,
+            'headless.pageTitleProviders' => true,
             'security.usePasswordPolicyForFrontendUsers' => true,
             'unifiedPageTranslationHandling' => true,
         ],
