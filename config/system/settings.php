@@ -66,6 +66,7 @@ return [
         ],
     ],
     'FE' => [
+        'loginRateLimit' => 0,
         'debug' => true,
         'passwordHashing' => [
             'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\Argon2iPasswordHash',
