@@ -1,5 +1,7 @@
 base: 'https://api.pwa-demo.ddev.site'
 frontendBase: 'https://pwa-demo.ddev.site'
+frontendApiProxy: 'https://pwa-demo.ddev.site/headless'
+frontendFileApi: 'https://pwa-demo.ddev.site/headless/fileadmin'
 baseVariants:
   - base: 'https://api.t3pwa.com'
     condition: 'applicationContext == "Production/Production"'

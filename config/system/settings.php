@@ -52,25 +52,18 @@ return [
             'useMysqlFulltext' => '0',
             'xlhtml' => '/usr/bin/',
         ],
-        'mask' => [
-            'backend' => 'EXT:site_package/Resources/Private/Mask/Backend/Templates',
-            'backend_layouts_folder' => '',
-            'backendlayout_pids' => '0',
-            'content' => 'EXT:site_package/Resources/Private/Mask/Frontend/Templates',
-            'content_elements_folder' => '',
-            'json' => 'EXT:site_package/Configuration/Mask/mask.json',
-            'layouts' => 'EXT:site_package/Resources/Private/Mask/Frontend/Layouts',
-            'layouts_backend' => 'EXT:site_package/Resources/Private/Mask/Backend/Layouts',
-            'loader_identifier' => 'json',
-            'override_shared_fields' => '0',
-            'partials' => 'EXT:site_package/Resources/Private/Mask/Frontend/Partials',
-            'partials_backend' => 'EXT:site_package/Resources/Private/Mask/Backend/Partials',
-            'preview' => 'EXT:site_package/Resources/Public/Mask/',
-        ],
         'scheduler' => [
             'maxLifetime' => '1440',
             'showSampleTasks' => '1',
-        ]
+        ],
+        'typo3_ai' => [
+            'api' => [
+                'chatgpt' => [
+                    'id' => '',
+                    'secret' => '',
+                ],
+            ],
+        ],
     ],
     'FE' => [
         'debug' => true,
@@ -138,6 +131,7 @@ return [
                 ],
             ],
         ],
+        'cookieDomain' => 'pwa-demo.ddev.site',
         'devIPmask' => '*',
         'displayErrors' => 1,
         'encryptionKey' => '517d47fd2681627245de9c4a4a726ac2e833c8bca7c5c0ad543c12e9f2ddbd8803a83044b6a4f247b26ceddf03be451d',
@@ -145,6 +139,7 @@ return [
         'features' => [
             'headless.elementBodyResponse' => true,
             'headless.redirectMiddlewares' => true,
+            'headless.storageProxy' => true,
             'security.usePasswordPolicyForFrontendUsers' => true,
             'unifiedPageTranslationHandling' => true,
         ],
