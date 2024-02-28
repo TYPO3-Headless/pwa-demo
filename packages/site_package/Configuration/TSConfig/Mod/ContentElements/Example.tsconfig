@@ -1,0 +1,16 @@
+mod.wizards.newContentElement.wizardItems {
+  plugins {
+    elements {
+      sitepackage_example {
+        iconIdentifier = content-widget-list
+        title = Example
+        description = Exanple
+        tt_content_defValues {
+          CType = sitepackage_example
+        }
+      }
+    }
+
+    show := addToList(sitepackage_example)
+  }
+}

@@ -1,0 +1,14 @@
+tt_content.sitepackage_example =< lib.contentElementWithHeader
+tt_content.sitepackage_example {
+  fields {
+    content {
+      fields {
+        data = EXTBASEPLUGIN
+        data {
+          extensionName = SitePackage
+          pluginName = Example
+        }
+      }
+    }
+  }
+}
