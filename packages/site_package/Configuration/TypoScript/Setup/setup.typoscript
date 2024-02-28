@@ -7,3 +7,13 @@
 @import 'EXT:site_package/Configuration/TypoScript/Configuration/*.typoscript'
 @import 'EXT:site_package/Configuration/TypoScript/Plain/ContentElements/*.typoscript'
 @import 'EXT:site_package/Configuration/TypoScript/Plain/Plugins/*.typoscript'
+
+
+config {
+  pageTitleProviders {
+    sitepackage {
+      provider = Pwademo\SitePackage\PageTitle\ExamplePageTitleProvider
+      before = record
+    }
+  }
+}
