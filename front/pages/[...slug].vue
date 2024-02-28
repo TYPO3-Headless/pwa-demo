@@ -8,8 +8,20 @@
 </template>
 
 <script setup lang="ts">
+import defu from 'defu'
+
 const { pageData, backendLayout, frontendLayout } = await useT3Page()
-definePageMeta({
-    layout: false
-})
+const { headData } = useT3Meta()
+
+const meta = {
+    meta: [
+        pageData.value?.meta.author ? {
+            id: 'author',
+            name: 'autor',
+            content: pageData.value?.meta.author
+        } : {}
+    ]
+}
+
+useHead(defu(meta, headData.value))
 </script>
