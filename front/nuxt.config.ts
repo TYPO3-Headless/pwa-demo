@@ -2,7 +2,8 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
-    '@t3headless/nuxt-typo3'
+    '@t3headless/nuxt-typo3',
+    '@vite-pwa/nuxt'
   ],
   extends: '@t3headless/nuxt-typo3-ui',
   typo3: {
@@ -19,6 +20,37 @@ export default defineNuxtConfig({
        // proxy cookie header from the Browser to Node.js and TYPO3 API
        proxyReqHeaders: ['cookie']
 
+    }
+  },
+  pwa: {
+    devOptions: {
+      enabled: true
+    },
+    registerType: 'autoUpdate',
+    strategies: 'injectManifest',
+    manifest: {
+      name: 'WebCamp Venlo',
+      short_name: 'WebCamp Venlo',
+      description: 'My TYPO3 Headless Service',
+      theme_color: '#1C5188',
+      icons: [
+        {
+          src: 'pwa-512x512.png',
+          sizes: '192x192',
+          type: 'image/png',
+        },
+        {
+          src: 'pwa-512x512.png',
+          sizes: '512x512',
+          type: 'image/png',
+        },
+        {
+          src: 'pwa-512x512.png',
+          sizes: '512x512',
+          type: 'image/png',
+          purpose: 'any maskable',
+        },
+      ],
     }
   },
   // this part is needed only for ddev development mode

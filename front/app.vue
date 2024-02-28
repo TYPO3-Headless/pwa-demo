@@ -1,4 +1,5 @@
 <template>
+    <VitePwaManifest />
     <NuxtLayout>
       <template v-if="initialData.user"> user logged state: {{ initialData.user }}</template>
       <NuxtPage />

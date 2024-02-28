@@ -12,7 +12,9 @@ import defu from 'defu'
 
 const { pageData, backendLayout, frontendLayout } = await useT3Page()
 const { headData } = useT3Meta()
-
+definePageMeta({
+    layout: false
+})
 const meta = {
     meta: [
         pageData.value?.meta.author ? {
