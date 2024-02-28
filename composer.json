@@ -26,6 +26,7 @@
 	],
 	"require": {
 		"php": "^8.3",
+		"bk2k/bootstrap-package": "^14.0",
 		"friendsoftypo3/headless": "^4",
 		"helhum/typo3-console": "^8.0",
 		"pwademo/site-package": "^1",
