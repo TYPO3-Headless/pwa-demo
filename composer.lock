@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "78185aef1fa096cdfe8e07ab78c9accf",
+    "content-hash": "66ddad891c3fcd2dedd0d19814ea7a07",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -994,6 +994,165 @@
                 "source": "https://github.com/TYPO3-Headless/headless/tree/v4.2.7"
             },
             "time": "2024-02-07T14:42:51+00:00"
+        },
+        {
+            "name": "friendsoftypo3/headless_news",
+            "version": "v3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3-Headless/headless_news.git",
+                "reference": "e0a20d8acf8eb1ea61630ab5bae384ecea881a41"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3-Headless/headless_news/zipball/e0a20d8acf8eb1ea61630ab5bae384ecea881a41",
+                "reference": "e0a20d8acf8eb1ea61630ab5bae384ecea881a41",
+                "shasum": ""
+            },
+            "require": {
+                "friendsoftypo3/headless": "^3.0 || ^4.0 || dev-master",
+                "georgringer/news": "^11.2",
+                "typo3/cms-core": "^11.5 || ^12.4"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "headless_news"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Tymoteusz Motylewski",
+                    "role": "Head"
+                },
+                {
+                    "name": "Łukasz Uznański",
+                    "role": "Developer"
+                },
+                {
+                    "name": "TYPO3 PWA Initiative",
+                    "email": "extensions@macopedia.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "This extension provides integration with news to output content from TYPO3 in JSON format.",
+            "keywords": [
+                "headless",
+                "json",
+                "news",
+                "pwa",
+                "typo3"
+            ],
+            "support": {
+                "issues": "https://github.com/TYPO3-Headless/headless_news/issues",
+                "source": "https://github.com/TYPO3-Headless/headless_news/tree/v3.0.0"
+            },
+            "time": "2024-01-09T09:31:06+00:00"
+        },
+        {
+            "name": "georgringer/news",
+            "version": "11.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/georgringer/news.git",
+                "reference": "c4c08098f09c3cac4e6e780b31a471b9bd675ad3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/georgringer/news/zipball/c4c08098f09c3cac4e6e780b31a471b9bd675ad3",
+                "reference": "c4c08098f09c3cac4e6e780b31a471b9bd675ad3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">= 7.4 < 8.4",
+                "symfony/console": "^5.4 || ^6.4 || ^7.0",
+                "typo3/cms-backend": "^11.5.24 || ^12.4.2",
+                "typo3/cms-core": "^11.5.24 || ^12.4.2",
+                "typo3/cms-extbase": "^11.5.24 || ^12.4.2",
+                "typo3/cms-fluid": "^11.5.24 || ^12.4.2",
+                "typo3/cms-frontend": "^11.5.24 || ^12.4.2"
+            },
+            "replace": {
+                "typo3-ter/news": "self.version"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.47.1",
+                "phpunit/phpunit": "^9.6.15",
+                "typo3/cms-composer-installers": "^3.1.3 || 4.0.0-RC1 || ^5.0",
+                "typo3/cms-install": "^11.5.24 || ^12.4.2",
+                "typo3/cms-seo": "^11.5.24 || ^12.4.2",
+                "typo3/coding-standards": "^0.5.5",
+                "typo3/testing-framework": "^7.0.4",
+                "webmozart/assert": "^1.11.0"
+            },
+            "suggest": {
+                "georgringer/news-tagsuggest": "On the fly creation of tag records within a news record",
+                "georgringer/numbered-pagination": "Improved pagination API",
+                "reelworx/rx-shariff": "GDPR compliant social sharing",
+                "typo3/cms-install": "Upgrade wizards",
+                "typo3/cms-scheduler": "XML and ICS import",
+                "typo3/cms-seo": "Sitemaps"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "news",
+                    "app-dir": ".Build",
+                    "web-dir": ".Build/Web"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GeorgRinger\\News\\": "Classes"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Georg Ringer",
+                    "homepage": "https://ringer.it",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Versatile news system based on Extbase & Fluid and using the latest technologies provided by TYPO3 CMS.",
+            "homepage": "https://extensions.typo3.org/extension/news",
+            "keywords": [
+                "article",
+                "extension",
+                "news",
+                "typo3"
+            ],
+            "support": {
+                "docs": "https://docs.typo3.org/p/georgringer/news/main/en-us/",
+                "issues": "https://github.com/georgringer/news/issues",
+                "source": "https://github.com/georgringer/news"
+            },
+            "funding": [
+                {
+                    "url": "https://paypal.me/GeorgRinger/10",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.amazon.de/hz/wishlist/ls/8F573K08TSDG",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/georgringer",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/georgringer",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2024-05-14T18:08:12+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
