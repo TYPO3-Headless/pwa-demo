@@ -58,3 +58,27 @@ languages:
 rootPageId: 43
 websiteTitle: 'TYPO3 Headless & PWA Demo'
 routes: []
+routeEnhancers:
+  News:
+    type: Extbase
+    extension: News
+    plugin: Pi1
+    routes:
+      - routePath: '/'
+        _controller: 'News::list'
+      - routePath: '/page/{page}'
+        _controller: 'News::list'
+        _arguments:
+          page: currentPage
+      - routePath: '/{news-title}'
+        _controller: 'News::detail'
+        _arguments:
+          news-title: news
+    defaultController: 'News::list'
+    aspects:
+      page:
+        type: StaticRangeMapper
+        start: '1'
+        end: '100'
+      news-title:
+        type: NewsTitle
