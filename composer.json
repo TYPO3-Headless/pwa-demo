@@ -26,7 +26,7 @@
 	],
 	"require": {
 		"php": "^8.3",
-		"friendsoftypo3/headless": "^4",
+		"friendsoftypo3/headless": "^4.3",
 		"friendsoftypo3/headless_news": "^3.0",
 		"georgringer/news": "^11.4",
 		"helhum/typo3-console": "^8.0",
