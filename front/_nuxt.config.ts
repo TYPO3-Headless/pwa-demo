@@ -15,11 +15,9 @@ export default defineNuxtConfig({
     }
   },
   vite: {
+    // Vite settings for development mode on DDEV
     server: {
-      hmr: {
-        protocol: 'wss',
-        path: 'hmr/'
-      }
+      allowedHosts: ['app_upstream', 'pwa-demo.ddev.site'],
     }
-  }
+  },
 })
