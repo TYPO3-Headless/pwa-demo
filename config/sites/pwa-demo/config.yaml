@@ -3,17 +3,13 @@ frontendBase: 'https://pwa-demo.ddev.site'
 frontendApiProxy: 'https://pwa-demo.ddev.site/headless'
 frontendFileApi: 'https://pwa-demo.ddev.site/headless/fileadmin'
 baseVariants:
-  - base: 'https://api.t3pwa.com'
+  -
+    base: 'https://api.t3pwa.com'
     condition: 'applicationContext == "Production/Production"'
     frontendBase: 'https://demo.t3pwa.com'
     frontendApiProxy: 'https://demo.t3pwa.com/headless'
     frontendFileApi: 'https://demo.t3pwa.com/headless/fileadmin'
-errorHandling:
-  -
-    errorCode: 404
-    errorHandler: Page
-    errorContentSource: 't3://page?uid=47'
-headless: true
+headless: 1
 languages:
   -
     languageId: 0
@@ -56,29 +52,30 @@ languages:
     fallbacks: '0'
     enabled: true
 rootPageId: 43
-websiteTitle: 'TYPO3 Headless & PWA Demo'
-routes: []
 routeEnhancers:
   News:
     type: Extbase
     extension: News
     plugin: Pi1
     routes:
-      - routePath: '/'
-        _controller: 'News::list'
-      - routePath: '/page/{page}'
-        _controller: 'News::list'
-        _arguments:
-          page: currentPage
       - routePath: '/{news-title}'
         _controller: 'News::detail'
         _arguments:
           news-title: news
+      - routePath: '/{page}'
+        _controller: 'News::list'
+        _arguments:
+          page: 'currentPage'
     defaultController: 'News::list'
+    defaults:
+      page: '0'
     aspects:
       page:
         type: StaticRangeMapper
         start: '1'
         end: '100'
       news-title:
-        type: NewsTitle
+        type: PersistedAliasMapper
+        tableName: tx_news_domain_model_news
+        routeFieldName: path_segment
+websiteTitle: 'TYPO3 Headless & PWA Demo'

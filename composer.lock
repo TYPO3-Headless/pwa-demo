@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b08f98563cd9ff99a176712357c25324",
+    "content-hash": "bd31f54336c808bf39f7526fc9fb84fc",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -912,23 +912,24 @@
         },
         {
             "name": "friendsoftypo3/headless_news",
-            "version": "v3.0.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-Headless/headless_news.git",
-                "reference": "e0a20d8acf8eb1ea61630ab5bae384ecea881a41"
+                "reference": "b623543461588e1008f0383e8d647607a78755e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-Headless/headless_news/zipball/e0a20d8acf8eb1ea61630ab5bae384ecea881a41",
-                "reference": "e0a20d8acf8eb1ea61630ab5bae384ecea881a41",
+                "url": "https://api.github.com/repos/TYPO3-Headless/headless_news/zipball/b623543461588e1008f0383e8d647607a78755e0",
+                "reference": "b623543461588e1008f0383e8d647607a78755e0",
                 "shasum": ""
             },
             "require": {
-                "friendsoftypo3/headless": "^3.0 || ^4.0 || dev-master",
-                "georgringer/news": "^11.2",
-                "typo3/cms-core": "^11.5 || ^12.4"
+                "friendsoftypo3/headless": "^4.0 || dev-master",
+                "georgringer/news": "^12.0",
+                "typo3/cms-core": "^12.4 || ^13.4"
             },
+            "default-branch": true,
             "type": "typo3-cms-extension",
             "extra": {
                 "typo3/cms": {
@@ -964,51 +965,50 @@
             ],
             "support": {
                 "issues": "https://github.com/TYPO3-Headless/headless_news/issues",
-                "source": "https://github.com/TYPO3-Headless/headless_news/tree/v3.0.0"
+                "source": "https://github.com/TYPO3-Headless/headless_news/tree/master"
             },
-            "time": "2024-01-09T09:31:06+00:00"
+            "time": "2025-11-04T11:20:49+00:00"
         },
         {
             "name": "georgringer/news",
-            "version": "11.4.3",
+            "version": "12.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/georgringer/news.git",
-                "reference": "87f0d67c2d3d3299d7048cecf110e4bf2f54821c"
+                "reference": "8e70a11cbfb444c0b1ef6a0db5245324d17aa217"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/georgringer/news/zipball/87f0d67c2d3d3299d7048cecf110e4bf2f54821c",
-                "reference": "87f0d67c2d3d3299d7048cecf110e4bf2f54821c",
+                "url": "https://api.github.com/repos/georgringer/news/zipball/8e70a11cbfb444c0b1ef6a0db5245324d17aa217",
+                "reference": "8e70a11cbfb444c0b1ef6a0db5245324d17aa217",
                 "shasum": ""
             },
             "require": {
-                "php": ">= 7.4 < 8.4",
+                "php": ">= 8.1 < 8.5",
                 "symfony/console": "^5.4 || ^6.4 || ^7.0",
-                "typo3/cms-backend": "^11.5.24 || ^12.4.2",
-                "typo3/cms-core": "^11.5.24 || ^12.4.2",
-                "typo3/cms-extbase": "^11.5.24 || ^12.4.2",
-                "typo3/cms-fluid": "^11.5.24 || ^12.4.2",
-                "typo3/cms-frontend": "^11.5.24 || ^12.4.2"
+                "typo3/cms-backend": "^12.4.2 || ^13.1",
+                "typo3/cms-core": "^12.4.2 || ^13.1",
+                "typo3/cms-extbase": "^12.4.2 || ^13.1",
+                "typo3/cms-fluid": "^12.4.2 || ^13.1",
+                "typo3/cms-frontend": "^12.4.2 || ^13.1",
+                "typo3/cms-install": "^12.4.2 || ^13.1"
             },
             "replace": {
                 "typo3-ter/news": "self.version"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^3.47.1",
-                "phpunit/phpunit": "^9.6.15",
-                "typo3/cms-composer-installers": "^3.1.3 || 4.0.0-RC1 || ^5.0",
-                "typo3/cms-install": "^11.5.24 || ^12.4.2",
-                "typo3/cms-seo": "^11.5.24 || ^12.4.2",
+                "phpstan/phpdoc-parser": "^1.12.10",
+                "phpunit/phpunit": "^10.5",
+                "typo3/cms-seo": "^12.4.2 || ^13.1",
                 "typo3/coding-standards": "^0.5.5",
-                "typo3/testing-framework": "^7.0.4",
+                "typo3/testing-framework": "^8.0.9",
                 "webmozart/assert": "^1.11.0"
             },
             "suggest": {
                 "georgringer/news-tagsuggest": "On the fly creation of tag records within a news record",
                 "georgringer/numbered-pagination": "Improved pagination API",
                 "reelworx/rx-shariff": "GDPR compliant social sharing",
-                "typo3/cms-install": "Upgrade wizards",
                 "typo3/cms-scheduler": "XML and ICS import",
                 "typo3/cms-seo": "Sitemaps"
             },
@@ -1067,7 +1067,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2024-11-13T19:45:02+00:00"
+            "time": "2025-08-27T06:25:50+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -1614,16 +1614,16 @@
         },
         {
             "name": "lolli42/finediff",
-            "version": "1.1.1",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lolli42/FineDiff.git",
-                "reference": "015a2f50782d2639c0fb21325dcf747c4136ad2b"
+                "reference": "38a03ca581ee72d7b20bbb1d89d47c5ecf8b11ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lolli42/FineDiff/zipball/015a2f50782d2639c0fb21325dcf747c4136ad2b",
-                "reference": "015a2f50782d2639c0fb21325dcf747c4136ad2b",
+                "url": "https://api.github.com/repos/lolli42/FineDiff/zipball/38a03ca581ee72d7b20bbb1d89d47c5ecf8b11ba",
+                "reference": "38a03ca581ee72d7b20bbb1d89d47c5ecf8b11ba",
                 "shasum": ""
             },
             "require": {
@@ -1634,9 +1634,9 @@
                 "cogpowered/finediff": "*"
             },
             "require-dev": {
-                "friendsofphp/php-cs-fixer": "^3.50.0",
-                "phpstan/phpstan": "^1.10.57",
-                "phpunit/phpunit": "^11.2.6"
+                "friendsofphp/php-cs-fixer": "^3.89.1",
+                "phpstan/phpstan": "^2.1.31",
+                "phpunit/phpunit": "^11.5.43 || ^12.4.2"
             },
             "type": "library",
             "autoload": {
@@ -1673,9 +1673,9 @@
             ],
             "support": {
                 "issues": "https://github.com/lolli42/FineDiff/issues",
-                "source": "https://github.com/lolli42/FineDiff/tree/1.1.1"
+                "source": "https://github.com/lolli42/FineDiff/tree/1.1.2"
             },
-            "time": "2024-07-09T14:25:40+00:00"
+            "time": "2025-10-31T12:28:27+00:00"
         },
         {
             "name": "masterminds/html5",
@@ -8463,16 +8463,16 @@
         },
         {
             "name": "webmozart/assert",
-            "version": "1.12.0",
+            "version": "1.12.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webmozarts/assert.git",
-                "reference": "541057574806f942c94662b817a50f63f7345360"
+                "reference": "9be6926d8b485f55b9229203f962b51ed377ba68"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozarts/assert/zipball/541057574806f942c94662b817a50f63f7345360",
-                "reference": "541057574806f942c94662b817a50f63f7345360",
+                "url": "https://api.github.com/repos/webmozarts/assert/zipball/9be6926d8b485f55b9229203f962b51ed377ba68",
+                "reference": "9be6926d8b485f55b9229203f962b51ed377ba68",
                 "shasum": ""
             },
             "require": {
@@ -8515,15 +8515,17 @@
             ],
             "support": {
                 "issues": "https://github.com/webmozarts/assert/issues",
-                "source": "https://github.com/webmozarts/assert/tree/1.12.0"
+                "source": "https://github.com/webmozarts/assert/tree/1.12.1"
             },
-            "time": "2025-10-20T12:43:39+00:00"
+            "time": "2025-10-29T15:56:20+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": {
+        "friendsoftypo3/headless_news": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

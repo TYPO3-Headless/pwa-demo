@@ -27,8 +27,8 @@
 	"require": {
 		"php": "^8.3",
 		"friendsoftypo3/headless": "^4.7",
-		"friendsoftypo3/headless_news": "^3.0",
-		"georgringer/news": "^11.4",
+		"friendsoftypo3/headless_news": "dev-master",
+		"georgringer/news": "^12",
 		"helhum/typo3-console": "^8.0",
 		"pwademo/site-package": "^1",
 		"typo3/cms-adminpanel": "^12.4",
